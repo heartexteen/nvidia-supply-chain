@@ -270,7 +270,8 @@ function highlightFilter(filter) {
     font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; }
   #header { position:fixed; top:0; left:0; right:0; height:50px; z-index:1000;
     background:#fff; border-bottom:1px solid #DDD; padding:0 20px;
-    display:flex; align-items:center; gap:10px; box-shadow:0 2px 4px rgba(0,0,0,0.06); }
+    display:flex; align-items:center; gap:10px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.06); }
   #header h1 { margin:0; font-size:14px; font-weight:600; color:#212121; white-space:nowrap; }
   #header h1 span { color:#B8860B; }
   #search { padding:6px 10px; border:1px solid #CCC; border-radius:6px; font-size:13px; width:170px; outline:none; }
@@ -281,6 +282,19 @@ function highlightFilter(filter) {
     cursor:pointer; font-size:12px; color:#333; white-space:nowrap; font-weight:500; }
   .tool-btn:hover { background:#F5F5F5; }
   #runBtn.running { background:#D32F2F; color:#fff; border-color:#D32F2F; }
+  #scenarioPanel { position:fixed; top:60px; left:15px; z-index:999; background:#fff;
+    border:1px solid #DDD; border-radius:8px; padding:10px 14px; font-size:12px;
+    color:#333; box-shadow:0 2px 8px rgba(0,0,0,0.08); max-width:320px;
+    max-height: calc(100vh - 110px); overflow-y: auto; display:none; }
+  #scenarioPanel h3 { margin:0 0 8px 0; font-size:11px; color:#555; text-transform:uppercase; letter-spacing:0.5px; }
+  .scn-cut { padding:6px 8px; background:#FDECEA; border-left:3px solid #D32F2F; margin:4px 0 10px;
+    font-size:11px; color:#B71C1C; border-radius:3px; }
+  .scn-nopath { padding:6px 8px; background:#FFF8E1; border-left:3px solid #F9A825;
+    font-size:11px; color:#5D4037; border-radius:3px; }
+  .scn-paths-header { font-size:10px; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin:6px 0 4px; }
+  .scn-path { padding:6px 8px; margin:4px 0; background:#FAFAFA; border-radius:3px; }
+  .scn-path-meta { font-size:10px; color:#666; margin-bottom:3px; }
+  .scn-path-seq { font-size:11px; color:#212121; line-height:1.4; word-break:break-word; }
   .hdr-meta { color:#666; font-size:11px; margin-left:auto; white-space:nowrap; }
   #legend { position:fixed; top:60px; right:15px; z-index:999; background:#fff;
     border:1px solid #DDD; border-radius:8px; padding:10px 14px; font-size:12px;
@@ -299,6 +313,19 @@ function highlightFilter(filter) {
   #tips { position:fixed; bottom:12px; right:12px; z-index:999; background:rgba(0,0,0,0.75);
     color:#fff; padding:7px 11px; border-radius:6px; font-size:11px; max-width:260px; line-height:1.4; }
   #mynetwork { margin-top:50px !important; }
+  #scenarioFab { position:fixed; bottom:24px; right:20px; z-index:999;
+    width:52px; height:52px; border-radius:50%;
+    background:#fff; border:1px solid #CCC; cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15); font-size:22px; color:#333;
+    display:flex; align-items:center; justify-content:center;
+    transition: background 0.15s, transform 0.1s; padding:0; }
+  #scenarioFab:hover { background:#F5F5F5; transform:scale(1.05); }
+  #scenarioFab.running { background:#D32F2F; color:#fff; border-color:#D32F2F; }
+  #scenarioFab .fab-label { position:absolute; right:60px; top:50%;
+    transform:translateY(-50%); background:#212121; color:#fff;
+    padding:4px 10px; border-radius:4px; font-size:11px; white-space:nowrap;
+    opacity:0; pointer-events:none; transition: opacity 0.15s; }
+  #scenarioFab:hover .fab-label { opacity:1; }
   #tip { position:fixed; display:none; z-index:9999; pointer-events:none;
     background:#212121; color:#fff; padding:8px 12px; border-radius:6px;
     font-size:12px; line-height:1.5; max-width:300px;
@@ -334,7 +361,10 @@ function highlightFilter(filter) {
   <span class="hdr-meta" id="hdrMeta">Loading CSVs…</span>
 </div>
 
+<button id="scenarioFab" title="What-if: cut edge">✂<span class="fab-label">What-if: cut edge</span></button>
+
 <div id="statusBar"></div>
+<div id="scenarioPanel"></div>
 
 <div id="legend">
   <h3 id="colorLegendTitle">Node color = tier from NVDA</h3>
@@ -357,6 +387,8 @@ function highlightFilter(filter) {
   <h3>Edge = supplier → buyer</h3>
   <div class="edge-row"><span class="edge-line" style="background:#2E7D32;"></span> COGS (operating input)</div>
   <div class="edge-row"><span class="edge-line" style="background:#E65100;"></span> CAPEX (capital equipment)</div>
+  <div class="edge-row"><span class="edge-line" style="background:#3F51B5;"></span> RND (R&amp;D input)</div>
+  <div class="edge-row"><span class="edge-line" style="background:#795548;"></span> SGA (selling, general &amp; admin)</div>
   <div class="edge-row"><span class="edge-line" style="background:#B0BEC5;"></span> Uncategorized</div>
   <div class="edge-row"><span class="edge-line" style="background:#C2185B;"></span> ⇄ Bidirectional (mutual supplier/customer)</div>
   <div class="edge-row" style="color:#666;margin-top:4px;">Edge width ∝ buyer's cost %</div>
@@ -460,6 +492,11 @@ let currentColorMode = "tier";
 let currentIndustryFilter = "__all__";
 const FOCAL_ID = "NVIDIA Corp";
 
+// Shared color cache for focus-mode restoration + scenario-mode restoration.
+// Populated inside runNetworkInit() once network data is ready.
+let originalColors = { nodes: {}, edges: {} };
+let bidiHiddenEdgeIds = new Set(); // reverse sides of bidirectional pairs (hidden by default)
+
 function parseCsv(text) {
   const rows = [];
   let cur = [], field = "", inQ = false;
@@ -506,14 +543,30 @@ function computeTiers(nodeRows, edgeRows, focal) {
   }
   const up   = bfs(focal, inAdj);   // upstream = incoming edges (who supplies us)
   const down = bfs(focal, outAdj);  // downstream = outgoing edges (who we supply)
+
+  // Direct $-flow to/from focal, per neighbor — tiebreaker when u === d
+  const flow = {};
+  for (const e of edgeRows) {
+    const w = (parseFloat(e.cost_pct) || 0) + (parseFloat(e.supplier_rev_pct) || 0);
+    if (e.Source === focal) {
+      (flow[e.Target] = flow[e.Target] || { out: 0, in: 0 }).out += w;
+    } else if (e.Target === focal) {
+      (flow[e.Source] = flow[e.Source] || { out: 0, in: 0 }).in += w;
+    }
+  }
+
   const tier = {};
   for (const n of nodeRows) {
     const u = up[n.id], d = down[n.id];
-    if (n.id === focal) tier[n.id] = 0;
-    else if (u !== undefined && d !== undefined) tier[n.id] = (u <= d) ? -u : d;
-    else if (u !== undefined) tier[n.id] = -u;
-    else if (d !== undefined) tier[n.id] = d;
-    else tier[n.id] = null;
+    if (n.id === focal) { tier[n.id] = 0; continue; }
+    if (u === undefined && d === undefined) { tier[n.id] = null; continue; }
+    if (u === undefined) { tier[n.id] = d; continue; }
+    if (d === undefined) { tier[n.id] = -u; continue; }
+    if (u !== d) { tier[n.id] = (u < d) ? -u : d; continue; }
+    // u === d: dominant $ flow wins; ties default to downstream
+    const f = flow[n.id];
+    if (f && f.out !== f.in) { tier[n.id] = (f.out > f.in) ? d : -u; continue; }
+    tier[n.id] = d;
   }
   return tier;
 }
@@ -600,19 +653,18 @@ function populateIndustrySelect() {
   }
 }
 
-function buildNodeObject(n, sizesMap, initPos) {
+function buildNodeObject(n, sizesMap, initPos, degreeOf) {
   const size = (sizesMap && sizesMap[n.id]) || 10;
   const pos  = (initPos && initPos[n.id]) || [0, 0];
   const t = tierOf[n.id];
   const tstr = (t === null || t === undefined) ? null : String(clampTier(t));
   const isFocal = (n.id === FOCAL_ID);
-  const totalSup = parseInt(n.total_suppliers) || 0;
-  const totalCus = parseInt(n.total_customers) || 0;
+  const deg = (degreeOf && degreeOf[n.id]) || { in: 0, out: 0 };
   const tierLine = tstr === null ? "Isolated / unconnected" : TIER_LABELS[tstr];
   const title =
     `${n.id}\nTicker: ${n.ticker || "—"}\nIndustry: ${n.industry || "—"}\n` +
-    `${tierLine}\nDirect connections: ${totalSup + totalCus}\n` +
-    `Suppliers: ${totalSup}\nCustomers: ${totalCus}`;
+    `${tierLine}\nDirect connections: ${deg.in + deg.out}\n` +
+    `Suppliers: ${deg.in}\nCustomers: ${deg.out}`;
   return {
     id: n.id, label: n.id,
     borderWidth: isFocal ? 4 : 1,
@@ -624,13 +676,72 @@ function buildNodeObject(n, sizesMap, initPos) {
   };
 }
 
-function buildEdgeObject(e) {
+function buildBidiMap(edgeRows) {
+  // Group rows by unordered pair; mark mutual pairs.
+  // Primary = the row whose Source is lexicographically smaller.
+  const groups = new Map();
+  for (const e of edgeRows) {
+    const key = (e.Source < e.Target) ? `${e.Source}||${e.Target}` : `${e.Target}||${e.Source}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(e);
+  }
+  const partnerOf = new Map();  // "Source||Target" -> reverse edgeRow
+  const primaryOf = new Map();  // "Source||Target" -> true if this row is the visible one
+  for (const arr of groups.values()) {
+    if (arr.length !== 2) continue;
+    if (arr[0].Source === arr[1].Source) continue; // safety: duplicate row, not a pair
+    const a = arr[0], b = arr[1];
+    const ka = `${a.Source}||${a.Target}`;
+    const kb = `${b.Source}||${b.Target}`;
+    partnerOf.set(ka, b);
+    partnerOf.set(kb, a);
+    const primaryKey = (a.Source < b.Source) ? ka : kb;
+    primaryOf.set(primaryKey, true);
+  }
+  return { partnerOf, primaryOf };
+}
+
+function buildEdgeObject(e, opts) {
   const cost = parseFloat(e.cost_pct);
   const rev  = parseFloat(e.supplier_rev_pct);
   const cat  = (e.cost_category || "").trim();
   const costStr = isNaN(cost) ? "—" : cost.toFixed(2) + "%";
   const revStr  = isNaN(rev)  ? "—" : rev.toFixed(2)  + "%";
   const catLbl  = cat === "" ? "Uncategorized" : cat;
+
+  const key = `${e.Source}||${e.Target}`;
+  const partner = opts && opts.partnerOf ? opts.partnerOf.get(key) : null;
+  const isPrimary = !!(opts && opts.primaryOf && opts.primaryOf.get(key));
+  const isBidi = !!partner;
+
+  if (isBidi && !isPrimary) {
+    // Keep the reverse direction in the DataSet (for scenario-mode BFS)
+    // but hide it visually — the primary edge shows the ⇄ arrows.
+    return {
+      arrows: "to", from: e.Source, to: e.Target,
+      hidden: true, width: 0.1, color: "#C2185B",
+      title: `(mutual edge — see ⇄)`
+    };
+  }
+  if (isBidi && isPrimary) {
+    const pCost = parseFloat(partner.cost_pct);
+    const pRev  = parseFloat(partner.supplier_rev_pct);
+    const pCat  = (partner.cost_category || "").trim();
+    const pCostStr = isNaN(pCost) ? "—" : pCost.toFixed(2) + "%";
+    const pRevStr  = isNaN(pRev)  ? "—" : pRev.toFixed(2)  + "%";
+    const pCatLbl  = pCat === "" ? "Uncategorized" : pCat;
+    const maxCost = Math.max(isNaN(cost) ? 0 : cost, isNaN(pCost) ? 0 : pCost);
+    return {
+      arrows: "to, from",
+      color: "#C2185B",
+      from: e.Source, to: e.Target,
+      title: `${e.Source} ⇄ ${e.Target}  (mutual)\n` +
+             `  ${e.Source} → ${e.Target}: cost ${costStr}, rev ${revStr}, ${catLbl}\n` +
+             `  ${e.Target} → ${e.Source}: cost ${pCostStr}, rev ${pRevStr}, ${pCatLbl}`,
+      width: Math.max(0.5, Math.min(3, maxCost / 10))
+    };
+  }
+
   return {
     arrows: "to",
     color: EDGE_COLORS[cat] || EDGE_COLORS[""],
@@ -701,18 +812,297 @@ async function loadCsvData() {
   }
   industryColorMap = buildIndustryPalette(Object.keys(industryCounts));
 
+  // Per-node degree from actual edges in the graph (for tooltip counts)
+  const degreeOf = {};
+  for (const n of nodeRows) degreeOf[n.id] = { in: 0, out: 0 };
+  for (const e of edgeRows) {
+    if (degreeOf[e.Source]) degreeOf[e.Source].out++;
+    if (degreeOf[e.Target]) degreeOf[e.Target].in++;
+  }
+
+  // Detect bidirectional pairs so they render as one magenta ⇄ edge
+  const bidi = buildBidiMap(edgeRows);
+
   // Build vis objects
-  const nodeObjs = nodeRows.map(n => buildNodeObject(n, SIZES.total_degree, INIT_POS));
-  const edgeObjs = edgeRows.map(e => buildEdgeObject(e));
+  const nodeObjs = nodeRows.map(n => buildNodeObject(n, SIZES.total_degree, INIT_POS, degreeOf));
+  const edgeObjs = edgeRows.map(e => buildEdgeObject(e, bidi));
 
   nodes.clear(); nodes.add(nodeObjs);
   edges.clear(); edges.add(edgeObjs);
+  bidiHiddenEdgeIds = new Set(edges.get().filter(e => e.hidden === true).map(e => e.id));
 
   populateIndustrySelect();
   renderColorLegend("tier");
   document.getElementById("hdrMeta").textContent =
     `${nodeRows.length} nodes \u00b7 ${edgeRows.length} edges \u00b7 Bloomberg SPLC`;
   return { nodeRows, edgeRows };
+}
+
+// ---------- Scenario mode: cut-edge alternate path ----------
+let scenarioStep = 'off'; // 'off' | 'pick-A' | 'pick-B' | 'showing'
+let scenarioA = null, scenarioB = null;
+let scenarioCutEdgeIds = [];
+let scenarioAltPaths = [];  // [{ dir, label, path: {nodes, edges} }]
+const ALT_PATH_COLORS = ['#00C853', '#2962FF', '#FF6D00'];
+const CUT_EDGE_COLOR  = '#D32F2F';
+
+function enterScenarioMode() {
+  exitScenarioMode(true);
+  if (typeof clearFocus === 'function') clearFocus();
+  scenarioStep = 'pick-A';
+  setStatus('Scenario: click any node to analyze');
+  const btn = document.getElementById('scenarioFab');
+  if (btn) { btn.classList.add('running'); btn.title = 'Exit scenario'; }
+  const panel = document.getElementById('scenarioPanel');
+  panel.style.display = 'block';
+  panel.innerHTML = '<h3>What-if: cut edge</h3>' +
+    '<div style="font-size:11px; color:#555;">Step 1 of 2 — click any node to analyze.</div>';
+}
+
+function exitScenarioMode(skipRestore) {
+  const wasOn = scenarioStep !== 'off';
+  scenarioStep = 'off';
+  scenarioA = scenarioB = null;
+  scenarioCutEdgeIds = [];
+  scenarioAltPaths = [];
+  setStatus('');
+  const btn = document.getElementById('scenarioFab');
+  if (btn) { btn.classList.remove('running'); btn.title = 'What-if: cut edge'; }
+  const panel = document.getElementById('scenarioPanel');
+  if (panel) { panel.style.display = 'none'; panel.innerHTML = ''; }
+  if (wasOn && !skipRestore) restoreAllVisuals();
+}
+
+function getDirectNeighbors(nodeId) {
+  const set = new Set();
+  edges.get().forEach(e => {
+    if (e.from === nodeId) set.add(e.to);
+    if (e.to === nodeId) set.add(e.from);
+  });
+  return set;
+}
+
+function scenarioHandleNodeClick(nodeId) {
+  if (scenarioStep === 'pick-A') {
+    const neighbors = getDirectNeighbors(nodeId);
+    if (neighbors.size === 0) {
+      setStatus(`"${nodeId}" has no direct connections — pick another node.`);
+      return;
+    }
+    scenarioA = nodeId;
+    scenarioStep = 'pick-B';
+    highlightNeighborPick(nodeId, neighbors);
+    setStatus(`Selected "${nodeId}". Step 2 of 2 — click a highlighted neighbor to cut that connection.`);
+    const panel = document.getElementById('scenarioPanel');
+    panel.innerHTML =
+      `<h3>What-if: cut edge</h3>` +
+      `<div style="font-size:11px; color:#555;"><b>Anchor:</b> ${nodeId}</div>` +
+      `<div style="font-size:11px; color:#555; margin-top:4px;">Step 2 of 2 — click one of its ${neighbors.size} direct neighbors (highlighted).</div>`;
+  } else if (scenarioStep === 'pick-B') {
+    const neighbors = getDirectNeighbors(scenarioA);
+    if (!neighbors.has(nodeId)) {
+      setStatus(`"${nodeId}" is not a direct neighbor of "${scenarioA}". Click a highlighted node.`);
+      return;
+    }
+    scenarioB = nodeId;
+    runScenario();
+  }
+}
+
+function highlightNeighborPick(anchor, neighborSet) {
+  const nodeUpdates = nodes.get().map(n => {
+    if (n.id === anchor) {
+      return { id: n.id, opacity: 1.0, borderWidth: 5,
+               font: { color: '#212121', strokeColor: '#FFFFFF', strokeWidth: 3 } };
+    }
+    if (neighborSet.has(n.id)) {
+      return { id: n.id, opacity: 1.0, borderWidth: 3,
+               font: { color: '#212121', strokeColor: '#FFFFFF', strokeWidth: 3 } };
+    }
+    return { id: n.id,
+      color: { background: '#E0E0E0', border: '#D0D0D0' },
+      opacity: 0.3, borderWidth: 1,
+      font: { color: '#C0C0C0', strokeColor: '#FFFFFF', strokeWidth: 1 } };
+  });
+  nodes.update(nodeUpdates);
+  // Grey edges not touching the anchor
+  const edgeUpdates = edges.get().map(e => {
+    if (e.from === anchor || e.to === anchor) {
+      return { id: e.id, color: originalColors.edges[e.id] || '#B0BEC5', dashes: false };
+    }
+    return { id: e.id, color: { color: '#E0E0E0', opacity: 0.15 }, dashes: false };
+  });
+  edges.update(edgeUpdates);
+}
+
+function runScenario() {
+  scenarioStep = 'showing';
+  const cutEdges = edges.get().filter(e =>
+    (e.from === scenarioA && e.to === scenarioB) ||
+    (e.from === scenarioB && e.to === scenarioA));
+  scenarioCutEdgeIds = cutEdges.map(e => e.id);
+  const cutSet = new Set(scenarioCutEdgeIds);
+  const fwd = cutEdges.some(e => e.from === scenarioA && e.to === scenarioB);
+  const rev = cutEdges.some(e => e.from === scenarioB && e.to === scenarioA);
+  const alts = [];
+  if (fwd) {
+    const paths = kShortestPaths(scenarioA, scenarioB, 3, cutSet);
+    paths.forEach(p => alts.push({ dir:'forward',
+      label: `${scenarioA} → ${scenarioB}`, path: p }));
+  }
+  if (rev) {
+    const paths = kShortestPaths(scenarioB, scenarioA, 3, cutSet);
+    paths.forEach(p => alts.push({ dir:'reverse',
+      label: `${scenarioB} → ${scenarioA}`, path: p }));
+  }
+  scenarioAltPaths = alts;
+  applyScenarioVisuals();
+  updateScenarioPanel();
+  setStatus('');
+}
+
+function kShortestPaths(src, dst, K, forbiddenEdgeIds) {
+  const A = [];
+  const first = bfsPath(src, dst, forbiddenEdgeIds, new Set());
+  if (!first) return [];
+  A.push(first);
+  const B = [];
+  for (let k = 1; k < K; k++) {
+    const prev = A[k-1];
+    for (let i = 0; i < prev.nodes.length - 1; i++) {
+      const spurNode = prev.nodes[i];
+      const rootNodes = prev.nodes.slice(0, i+1);
+      const rootEdges = prev.edges.slice(0, i);
+      const blockedEdges = new Set(forbiddenEdgeIds);
+      for (const p of A) {
+        if (p.nodes.length > i+1 &&
+            p.nodes.slice(0, i+1).every((n, idx) => n === rootNodes[idx])) {
+          blockedEdges.add(p.edges[i]);
+        }
+      }
+      const blockedNodes = new Set(rootNodes.slice(0, -1));
+      const spur = bfsPath(spurNode, dst, blockedEdges, blockedNodes);
+      if (spur) {
+        const total = {
+          nodes: rootNodes.concat(spur.nodes.slice(1)),
+          edges: rootEdges.concat(spur.edges)
+        };
+        if (!B.some(p => pathEquals(p, total)) && !A.some(p => pathEquals(p, total))) {
+          B.push(total);
+        }
+      }
+    }
+    if (B.length === 0) break;
+    B.sort((a, b) => a.nodes.length - b.nodes.length);
+    A.push(B.shift());
+  }
+  return A;
+}
+
+function bfsPath(src, dst, forbiddenEdges, forbiddenNodes) {
+  if (src === dst) return { nodes: [src], edges: [] };
+  const outAdj = {};
+  for (const e of edges.get()) {
+    if (forbiddenEdges.has(e.id)) continue;
+    if (forbiddenNodes.has(e.from) || forbiddenNodes.has(e.to)) continue;
+    (outAdj[e.from] = outAdj[e.from] || []).push({ to: e.to, id: e.id });
+  }
+  const parent = { [src]: null };
+  const q = [src];
+  while (q.length) {
+    const v = q.shift();
+    if (v === dst) {
+      const nodesArr = [], edgeIds = [];
+      let cur = dst;
+      while (parent[cur]) { nodesArr.unshift(cur); edgeIds.unshift(parent[cur].edgeId); cur = parent[cur].prev; }
+      nodesArr.unshift(src);
+      return { nodes: nodesArr, edges: edgeIds };
+    }
+    for (const e of (outAdj[v] || [])) {
+      if (parent[e.to] === undefined) {
+        parent[e.to] = { prev: v, edgeId: e.id };
+        q.push(e.to);
+      }
+    }
+  }
+  return null;
+}
+
+function pathEquals(a, b) {
+  return a.nodes.length === b.nodes.length &&
+         a.nodes.every((n, i) => n === b.nodes[i]);
+}
+
+function applyScenarioVisuals() {
+  const pathNodeIds = new Set([scenarioA, scenarioB]);
+  const edgeColor = {};
+  scenarioAltPaths.forEach((p, i) => {
+    const color = ALT_PATH_COLORS[i % ALT_PATH_COLORS.length];
+    p.path.nodes.forEach(n => pathNodeIds.add(n));
+    p.path.edges.forEach(eid => { if (!edgeColor[eid]) edgeColor[eid] = color; });
+  });
+  const pathEdgeIds = new Set(Object.keys(edgeColor));
+  const nodeUpdates = nodes.get().map(n => {
+    if (pathNodeIds.has(n.id)) {
+      return { id: n.id, opacity: 1.0,
+               borderWidth: (n.id === scenarioA || n.id === scenarioB) ? 5 : 3,
+               font: { color: '#212121', strokeColor: '#FFFFFF', strokeWidth: 3 } };
+    }
+    return { id: n.id,
+      color: { background: '#E0E0E0', border: '#D0D0D0' },
+      opacity: 0.3, borderWidth: 1,
+      font: { color: '#C0C0C0', strokeColor: '#FFFFFF', strokeWidth: 1 } };
+  });
+  nodes.update(nodeUpdates);
+  const edgeUpdates = edges.get().map(e => {
+    if (scenarioCutEdgeIds.includes(e.id)) {
+      // Cut edges: show both directions (even hidden reverse) as a red dashed mark.
+      return { id: e.id, color: { color: CUT_EDGE_COLOR, opacity: 1.0 }, dashes: [8, 5], width: 3.5, hidden: false };
+    }
+    if (pathEdgeIds.has(e.id)) {
+      // Path edge: unhide (in case it's a bidi reverse) so the chain is visually complete.
+      return { id: e.id, color: { color: edgeColor[e.id], opacity: 1.0 }, dashes: false, width: 3, hidden: false };
+    }
+    // Leave bidi-hidden edges hidden; fade the rest.
+    return { id: e.id, color: { color: '#E0E0E0', opacity: 0.15 }, dashes: false,
+             hidden: bidiHiddenEdgeIds.has(e.id) };
+  });
+  edges.update(edgeUpdates);
+}
+
+function updateScenarioPanel() {
+  const panel = document.getElementById('scenarioPanel');
+  let html = '<h3>What-if: cut edge</h3>';
+  html += `<div class="scn-cut"><b>Cut:</b> ${scenarioA} &harr; ${scenarioB}</div>`;
+  if (scenarioAltPaths.length === 0) {
+    html += '<div class="scn-nopath"><b>Single point of failure.</b><br>No alternate path exists in the cut direction.</div>';
+  } else {
+    html += '<div class="scn-paths-header">Alternate paths (shortest first)</div>';
+    scenarioAltPaths.forEach((p, i) => {
+      const color = ALT_PATH_COLORS[i % ALT_PATH_COLORS.length];
+      const hops = p.path.nodes.length - 1;
+      html += `<div class="scn-path" style="border-left:3px solid ${color}">` +
+        `<div class="scn-path-meta">${p.label} &middot; ${hops} hops</div>` +
+        `<div class="scn-path-seq">${p.path.nodes.join(' &rarr; ')}</div></div>`;
+    });
+  }
+  panel.innerHTML = html;
+}
+
+function restoreAllVisuals() {
+  // Restore using cached originalColors and default opacities
+  if (!window.__originalColorsReady) return;
+  const nodeUpdates = nodes.get().map(n => ({
+    id: n.id, color: originalColors.nodes[n.id], opacity: 1.0,
+    borderWidth: (n.id === FOCAL_ID) ? 4 : 1,
+    font: { color: '#212121', strokeColor: '#FFFFFF', strokeWidth: 3 }
+  }));
+  nodes.update(nodeUpdates);
+  const edgeUpdates = edges.get().map(e => ({
+    id: e.id, color: originalColors.edges[e.id], dashes: false,
+    hidden: bidiHiddenEdgeIds.has(e.id)
+  }));
+  edges.update(edgeUpdates);
 }
 
 // ---------- Helpers ----------
@@ -991,10 +1381,12 @@ function runNetworkInit() {
   });
 
   // ---------- Focus mode: click node to grey out everything else ----------
-  // Snapshot original colors once at init (tier colors never change)
-  const originalColors = { nodes: {}, edges: {} };
+  // Snapshot original colors once at init (uses the outer `originalColors` global
+  // so restoreAllVisuals() and scenario mode can read the cache too).
+  originalColors = { nodes: {}, edges: {} };
   nodes.get().forEach(n => { originalColors.nodes[n.id] = n.color; });
   edges.get().forEach(e => { originalColors.edges[e.id] = e.color; });
+  window.__originalColorsReady = true;
 
   let focusedId = null;
 
@@ -1062,6 +1454,11 @@ function runNetworkInit() {
   }
 
   network.on('click', function(params) {
+    if (scenarioStep !== 'off') {
+      if (params.nodes.length > 0) scenarioHandleNodeClick(params.nodes[0]);
+      else network.unselectAll();
+      return;
+    }
     if (params.nodes.length > 0) {
       focusNode(params.nodes[0]);
     } else if (params.edges.length === 0) {
@@ -1094,12 +1491,20 @@ function runNetworkInit() {
 
   // Color-by + Industry filter
   document.getElementById('colorSel').addEventListener('change', function() {
+    exitScenarioMode();
     clearFocus();
     applyColorMode(this.value);
   });
   document.getElementById('industrySel').addEventListener('change', function() {
+    exitScenarioMode();
     clearFocus();
     applyIndustryFilter(this.value);
+  });
+
+  // What-if: cut edge
+  document.getElementById('scenarioFab').addEventListener('click', function() {
+    if (scenarioStep === 'off') enterScenarioMode();
+    else exitScenarioMode();
   });
 
   // Initialize home positions from initial layout
@@ -1167,7 +1572,7 @@ window.addEventListener('load', function() {
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
-                  var options = {"physics": {"enabled": false}, "interaction": {"hover": true, "tooltipDelay": 100, "navigationButtons": true, "keyboard": true}, "edges": {"smooth": {"type": "continuous", "roundness": 0.15}, "arrows": {"to": {"enabled": true, "scaleFactor": 0.5}}, "color": {"inherit": false}}, "nodes": {"borderWidth": 1, "borderWidthSelected": 3, "font": {"size": 11, "face": "Arial", "strokeWidth": 3, "strokeColor": "#FFFFFF"}}};
+                  var options = {"physics": {"enabled": false}, "interaction": {"hover": true, "tooltipDelay": 100, "navigationButtons": false, "keyboard": true}, "edges": {"smooth": {"type": "continuous", "roundness": 0.15}, "arrows": {"to": {"enabled": true, "scaleFactor": 0.5}}, "color": {"inherit": false}}, "nodes": {"borderWidth": 1, "borderWidthSelected": 3, "font": {"size": 11, "face": "Arial", "strokeWidth": 3, "strokeColor": "#FFFFFF"}}};
 
                   
 
