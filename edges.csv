@@ -1,0 +1,899 @@
+Source,Target,Type,Label,cost_pct,supplier_rev_pct,cost_category
+Taiwan Semiconductor Manufacturing Co,NVIDIA Corp,Directed,SUPPLIES,37.35,19.04,COGS
+SK hynix Inc,NVIDIA Corp,Directed,SUPPLIES,26.53,26.98,COGS
+Wistron Corp,NVIDIA Corp,Directed,SUPPLIES,16.58,15.57,COGS
+Micron Technology Inc,NVIDIA Corp,Directed,SUPPLIES,13.62,17.0,COGS
+Teradyne Inc,NVIDIA Corp,Directed,SUPPLIES,8.44,10.01,CAPEX
+Hon Hai Precision Industry Co,NVIDIA Corp,Directed,SUPPLIES,5.03,1.6,COGS
+Flex Ltd,NVIDIA Corp,Directed,SUPPLIES,2.93,4.74,COGS
+Fabrinet,NVIDIA Corp,Directed,SUPPLIES,2.13,27.6,COGS
+ASE Technology Holding Co Ltd,NVIDIA Corp,Directed,SUPPLIES,2.08,8.01,COGS
+Keysight Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,1.43,4.93,RND
+Ibiden Co Ltd,NVIDIA Corp,Directed,SUPPLIES,1.11,20.32,COGS
+Amkor Technology Inc,NVIDIA Corp,Directed,SUPPLIES,0.98,7.47,COGS
+Samsung Electronics Co Ltd,NVIDIA Corp,Directed,SUPPLIES,0.73,0.17,COGS
+King Yuan Electronics Co Ltd,NVIDIA Corp,Directed,SUPPLIES,0.67,36.02,COGS
+Monolithic Power Systems Inc,NVIDIA Corp,Directed,SUPPLIES,0.58,11.26,COGS
+Quanta Computer Inc,NVIDIA Corp,Directed,SUPPLIES,0.56,0.66,COGS
+BYD Co Ltd,NVIDIA Corp,Directed,SUPPLIES,0.5,0.03,COGS
+Western Digital Corp,NVIDIA Corp,Directed,SUPPLIES,0.37,1.47,COGS
+Jabil Inc,NVIDIA Corp,Directed,SUPPLIES,0.36,0.95,COGS
+Oracle Corp,NVIDIA Corp,Directed,SUPPLIES,0.34,0.11,SGA
+Intel Corp,NVIDIA Corp,Directed,SUPPLIES,0.3,0.26,COGS
+Corning Inc,NVIDIA Corp,Directed,SUPPLIES,0.27,0.72,COGS
+Coherent Corp,NVIDIA Corp,Directed,SUPPLIES,0.23,1.26,COGS
+Kinsus Interconnect Technology,NVIDIA Corp,Directed,SUPPLIES,0.14,9.47,COGS
+Astera Labs Inc,NVIDIA Corp,Directed,SUPPLIES,0.12,22.47,COGS
+Tower Semiconductor Ltd,NVIDIA Corp,Directed,SUPPLIES,0.16,13.01,COGS
+NetApp Inc,NVIDIA Corp,Directed,SUPPLIES,0.11,,COGS
+TTM Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,0.08,1.53,COGS
+Semtech Corp,NVIDIA Corp,Directed,SUPPLIES,0.07,3.87,COGS
+ARM Holdings PLC,NVIDIA Corp,Directed,SUPPLIES,0.06,0.93,COGS
+Alibaba Group Holding Ltd,NVIDIA Corp,Directed,SUPPLIES,0.75,0.02,SGA
+Yageo Corp,NVIDIA Corp,Directed,SUPPLIES,0.06,0.84,COGS
+ON Semiconductor Corp,NVIDIA Corp,Directed,SUPPLIES,0.03,0.26,COGS
+Vishay Intertechnology Inc,NVIDIA Corp,Directed,SUPPLIES,0.02,0.49,COGS
+LEENO Industrial Inc,NVIDIA Corp,Directed,SUPPLIES,0.03,3.99,COGS
+Infosys Ltd,NVIDIA Corp,Directed,SUPPLIES,0.28,0.07,SGA
+Cohu Inc,NVIDIA Corp,Directed,SUPPLIES,0.23,2.38,CAPEX
+BE Semiconductor Industries NV,NVIDIA Corp,Directed,SUPPLIES,0.25,1.67,CAPEX
+Nutanix Inc,NVIDIA Corp,Directed,SUPPLIES,0.01,0.32,COGS
+ISC Co Ltd,NVIDIA Corp,Directed,SUPPLIES,0.01,9.25,COGS
+Adobe Inc,NVIDIA Corp,Directed,SUPPLIES,0.19,0.03,SGA
+TSE Co Ltd,NVIDIA Corp,Directed,SUPPLIES,0.01,2.02,COGS
+Diodes Inc,NVIDIA Corp,Directed,SUPPLIES,0.01,0.49,COGS
+Suzhou UIGreen Micro&Nano Tech,NVIDIA Corp,Directed,SUPPLIES,0.01,8.0,COGS
+Clariant AG,NVIDIA Corp,Directed,SUPPLIES,0.01,0.12,COGS
+SOITEC,NVIDIA Corp,Directed,SUPPLIES,0.01,1.07,COGS
+Alpha & Omega Semiconductor Ltd,NVIDIA Corp,Directed,SUPPLIES,0.01,0.63,COGS
+UPI Semiconductor Corp,NVIDIA Corp,Directed,SUPPLIES,0.01,2.31,COGS
+Dolby Laboratories Inc,NVIDIA Corp,Directed,SUPPLIES,0.01,0.14,COGS
+Duksan Hi-Metal Co Ltd,NVIDIA Corp,Directed,SUPPLIES,0.01,0.67,COGS
+Calnex Solutions PLC,NVIDIA Corp,Directed,SUPPLIES,0.01,5.65,COGS
+inTEST Corp,NVIDIA Corp,Directed,SUPPLIES,0.01,0.74,CAPEX
+Luminar Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,0.01,,COGS
+Bango PLC,NVIDIA Corp,Directed,SUPPLIES,,,
+Skardin Industrial Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+PDF Solutions Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+LianChuang Electronic Technolo,NVIDIA Corp,Directed,SUPPLIES,,,
+TaiSol Electronics Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Precise Biometrics AB,NVIDIA Corp,Directed,SUPPLIES,,,
+NBTM New Materials Group Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Siltronic AG,NVIDIA Corp,Directed,SUPPLIES,,,
+Taiwan Semiconductor Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Altium Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Himax Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+ADATA Technology Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Chenbro Micom Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+ON24 Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+AT&S Austria Technologie & Sys,NVIDIA Corp,Directed,SUPPLIES,,,
+Renesas Electronics Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Equinix Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Wieson Technologies Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Chenming Electronic Technology,NVIDIA Corp,Directed,SUPPLIES,,,
+MPI Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+u-blox Holding AG,NVIDIA Corp,Directed,SUPPLIES,,,
+MediaTek Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Thine Electronics Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Qnity Electronics Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+InnoScience Suzhou Technology,NVIDIA Corp,Directed,SUPPLIES,,,
+Sandisk Corp/DE,NVIDIA Corp,Directed,SUPPLIES,,,
+TechTarget Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Compa Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Hesai Group,NVIDIA Corp,Directed,SUPPLIES,,,
+Jacobs Solutions Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Quera Computing Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Informatica Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Juneway Electronic Technology,NVIDIA Corp,Directed,SUPPLIES,,,
+Rootly Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+CoreWeave Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Beijing 51World Digital Twin T,NVIDIA Corp,Directed,SUPPLIES,,,
+Shenzhen Edadoc Technology Co,NVIDIA Corp,Directed,SUPPLIES,,,
+IonQ Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Siemens Energy AG,NVIDIA Corp,Directed,SUPPLIES,,,
+SENKO Co Ltd/Korea,NVIDIA Corp,Directed,SUPPLIES,,,
+Mindspace Business Parks REIT,NVIDIA Corp,Directed,SUPPLIES,,,
+Shenzhen Qiangrui Precision Te,NVIDIA Corp,Directed,SUPPLIES,,,
+Pensana PLC,NVIDIA Corp,Directed,SUPPLIES,,,
+HPC Systems Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Seeqc Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Grid Dynamics Holdings Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Vertiv Holdings Co,NVIDIA Corp,Directed,SUPPLIES,,,
+Converge Technology Solutions,NVIDIA Corp,Directed,SUPPLIES,,,
+Quectel Wireless Solutions Co,NVIDIA Corp,Directed,SUPPLIES,,,
+Magic Media Works Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Arbe Robotics Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+RoboTechnik Intelligent Techno,NVIDIA Corp,Directed,SUPPLIES,,,
+Groq Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Gitlab Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Senko Advanced Components Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Ascential Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Verisk Maplecroft,NVIDIA Corp,Directed,SUPPLIES,,,
+Skydio Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Shenzhen Wote Advanced Materia,NVIDIA Corp,Directed,SUPPLIES,,,
+Veritone Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Snowflake Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Lumentum Holdings Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Suzhou TFC Optical Communicati,NVIDIA Corp,Directed,SUPPLIES,,,
+Quick Intelligent Equipment Co,NVIDIA Corp,Directed,SUPPLIES,,,
+JFrog Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Sempra,NVIDIA Corp,Directed,SUPPLIES,,,
+Unimicron Technology Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Amdocs Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+BlackBerry Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Power Integrations Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Stripe LLC,NVIDIA Corp,Directed,SUPPLIES,,,
+Mirantis Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Forescout Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Asia Plastic Recycling Holding,NVIDIA Corp,Directed,SUPPLIES,,,
+Jiujiang Defu Technology Co Lt,NVIDIA Corp,Directed,SUPPLIES,,,
+Sichuan EM Technology Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Coveo Solutions Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Omni Logistics LLC /Texas,NVIDIA Corp,Directed,SUPPLIES,,,
+Aehr Test Systems,NVIDIA Corp,Directed,SUPPLIES,,,
+Appro Photoelectron Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Browave Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Business-intelligence of Orien,NVIDIA Corp,Directed,SUPPLIES,,,
+Esker SA,NVIDIA Corp,Directed,SUPPLIES,,,
+Shenzhen Megmeet Electrical Co,NVIDIA Corp,Directed,SUPPLIES,,,
+Rambus Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Shenzhen AOTO Electronics Co L,NVIDIA Corp,Directed,SUPPLIES,,,
+Rockwell Automation Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Suzhou Jinfu Technology Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Universal Scientific Industria,NVIDIA Corp,Directed,SUPPLIES,,,
+Chroma ATE Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Ningbo Tuopu Group Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Gudeng Precision Industrial Co,NVIDIA Corp,Directed,SUPPLIES,,,
+Check Point Software Technolog,NVIDIA Corp,Directed,SUPPLIES,,,
+ANSYS Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Bharti Airtel Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Arista Networks Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+ASML Holding NV,NVIDIA Corp,Directed,SUPPLIES,,,
+SoftBank Group Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+TD SYNNEX Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Vmware LLC,NVIDIA Corp,Directed,SUPPLIES,,,
+Cyberlink Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+NCSoft Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Singapore Telecommunications L,NVIDIA Corp,Directed,SUPPLIES,,,
+Hexagon AB,NVIDIA Corp,Directed,SUPPLIES,,,
+CDW Corp/DE,NVIDIA Corp,Directed,SUPPLIES,,,
+Sunny Optical Technology Group,NVIDIA Corp,Directed,SUPPLIES,,,
+SAP SE,NVIDIA Corp,Directed,SUPPLIES,,,
+FUCHS SE,NVIDIA Corp,Directed,SUPPLIES,,,
+Keppel Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Siemens AG,NVIDIA Corp,Directed,SUPPLIES,,,
+Schneider Electric SE,NVIDIA Corp,Directed,SUPPLIES,,,
+Publicis Groupe SA,NVIDIA Corp,Directed,SUPPLIES,,,
+Sumitomo Electric Industries L,NVIDIA Corp,Directed,SUPPLIES,,,
+Sumitomo Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Lotes Co Ltd,NVIDIA Corp,Directed,SUPPLIES,,,
+Mori Hills REIT Investment Cor,NVIDIA Corp,Directed,SUPPLIES,,,
+Synopsys Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Microsoft Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+KLA Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Edison International,NVIDIA Corp,Directed,SUPPLIES,,,
+PG&E Corp,NVIDIA Corp,Directed,SUPPLIES,,,
+Lumen Technologies Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Cadence Design Systems Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+Analog Devices Inc,NVIDIA Corp,Directed,SUPPLIES,,,
+NVIDIA Corp,Microsoft Corp,Directed,SUPPLIES,50.28,22.05,CAPEX
+NVIDIA Corp,Amazon.com Inc,Directed,SUPPLIES,24.17,14.01,CAPEX
+NVIDIA Corp,Super Micro Computer Inc,Directed,SUPPLIES,54.47,9.5,COGS
+NVIDIA Corp,Alphabet Inc,Directed,SUPPLIES,,4.87,CAPEX
+NVIDIA Corp,Meta Platforms Inc,Directed,SUPPLIES,13.07,4.1,CAPEX
+NVIDIA Corp,Foxconn Industrial Internet Co,Directed,SUPPLIES,,3.6,
+NVIDIA Corp,Dell Technologies Inc,Directed,SUPPLIES,,2.54,COGS
+NVIDIA Corp,Wiwynn Corp,Directed,SUPPLIES,,2.5,
+NVIDIA Corp,Oracle Corp,Directed,SUPPLIES,,1.98,
+NVIDIA Corp,CoreWeave Inc,Directed,SUPPLIES,,1.36,
+NVIDIA Corp,Lenovo Group Ltd,Directed,SUPPLIES,,1.11,COGS
+NVIDIA Corp,Asustek Computer Inc,Directed,SUPPLIES,,0.98,COGS
+NVIDIA Corp,Gigabyte Technology Co Ltd,Directed,SUPPLIES,,0.82,COGS
+NVIDIA Corp,IEIT Systems Co Ltd,Directed,SUPPLIES,,0.6,
+NVIDIA Corp,Avnet Inc,Directed,SUPPLIES,,0.58,COGS
+NVIDIA Corp,Quanta Computer Inc,Directed,SUPPLIES,1.95,0.55,COGS
+NVIDIA Corp,Hewlett Packard Enterprise Co,Directed,SUPPLIES,5.13,0.48,COGS
+NVIDIA Corp,Cisco Systems Inc,Directed,SUPPLIES,5.63,0.44,COGS
+NVIDIA Corp,HP Inc,Directed,SUPPLIES,2.43,0.41,COGS
+NVIDIA Corp,Tesla Inc,Directed,SUPPLIES,10.37,0.36,CAPEX
+NVIDIA Corp,TD SYNNEX Corp,Directed,SUPPLIES,1.48,0.35,COGS
+NVIDIA Corp,JD.com Inc,Directed,SUPPLIES,15.47,0.29,CAPEX
+NVIDIA Corp,Best Buy Co Inc,Directed,SUPPLIES,1.64,0.26,COGS
+NVIDIA Corp,Juniper Networks Inc,Directed,SUPPLIES,21.41,0.26,COGS
+NVIDIA Corp,Tencent Holdings Ltd,Directed,SUPPLIES,,,CAPEX
+NVIDIA Corp,Nintendo Co Ltd,Directed,SUPPLIES,,,COGS
+NVIDIA Corp,Nebius Group NV,Directed,SUPPLIES,,,
+NVIDIA Corp,Atos SE,Directed,SUPPLIES,4.25,0.16,COGS
+NVIDIA Corp,Hyundai Motor Co,Directed,SUPPLIES,0.33,0.13,COGS
+NVIDIA Corp,Acer Inc,Directed,SUPPLIES,3.9,0.12,COGS
+NVIDIA Corp,Siemens AG,Directed,SUPPLIES,0.6,0.12,COGS
+NVIDIA Corp,International Business Machines,Directed,SUPPLIES,0.93,0.11,COGS
+NVIDIA Corp,KION Group AG,Directed,SUPPLIES,2.6,0.1,COGS
+NVIDIA Corp,Mercedes-Benz Group AG,Directed,SUPPLIES,0.21,0.1,COGS
+NVIDIA Corp,Computacenter PLC,Directed,SUPPLIES,2.95,0.1,COGS
+NVIDIA Corp,Micro-Star International Co Lt,Directed,SUPPLIES,3.86,0.1,COGS
+NVIDIA Corp,Deere & Co,Directed,SUPPLIES,,0.1,
+NVIDIA Corp,Arista Networks Inc,Directed,SUPPLIES,1.01,0.09,COGS
+NVIDIA Corp,Alibaba Group Holding Ltd,Directed,SUPPLIES,6.53,0.09,COGS
+NVIDIA Corp,Sony Group Corp,Directed,SUPPLIES,1.34,0.09,CAPEX
+NVIDIA Corp,Expedia Group Inc,Directed,SUPPLIES,0.33,0.08,COGS
+NVIDIA Corp,LG Electronics Inc,Directed,SUPPLIES,17.41,0.08,CAPEX
+NVIDIA Corp,BYD Co Ltd,Directed,SUPPLIES,0.45,0.08,COGS
+NVIDIA Corp,Samsung Electronics Co Ltd,Directed,SUPPLIES,0.13,0.08,COGS
+NVIDIA Corp,Inventec Corp,Directed,SUPPLIES,0.86,0.07,COGS
+NVIDIA Corp,Komatsu Ltd,Directed,SUPPLIES,1.04,0.07,COGS
+NVIDIA Corp,Macnica Holdings Inc,Directed,SUPPLIES,2.71,0.07,COGS
+NVIDIA Corp,Mitac Holdings Corp,Directed,SUPPLIES,,0.07,
+NVIDIA Corp,CDW Corp/DE,Directed,SUPPLIES,6.19,0.06,COGS
+NVIDIA Corp,Baidu Inc,Directed,SUPPLIES,0.95,0.06,COGS
+NVIDIA Corp,Traton SE,Directed,SUPPLIES,13.42,0.05,CAPEX
+NVIDIA Corp,Snowflake Inc,Directed,SUPPLIES,0.33,0.05,COGS
+NVIDIA Corp,Robert Bosch GmbH,Directed,SUPPLIES,7.79,0.05,COGS
+NVIDIA Corp,NetApp Inc,Directed,SUPPLIES,0.19,0.05,COGS
+NVIDIA Corp,Insight Enterprises Inc,Directed,SUPPLIES,6.33,0.05,COGS
+NVIDIA Corp,Fujitsu Ltd,Directed,SUPPLIES,2.03,0.05,COGS
+NVIDIA Corp,Salesforce Inc,Directed,SUPPLIES,0.83,0.04,COGS
+NVIDIA Corp,Teradyne Inc,Directed,SUPPLIES,13.42,0.04,CAPEX
+NVIDIA Corp,Arrow Electronics Inc,Directed,SUPPLIES,5.88,0.04,COGS
+NVIDIA Corp,Volvo Car AB,Directed,SUPPLIES,0.31,0.04,COGS
+NVIDIA Corp,Adobe Inc,Directed,SUPPLIES,0.25,0.03,COGS
+NVIDIA Corp,Advantech Co Ltd,Directed,SUPPLIES,5.94,0.03,COGS
+NVIDIA Corp,Volvo AB,Directed,SUPPLIES,0.21,0.03,COGS
+NVIDIA Corp,iFlytek Co Ltd,Directed,SUPPLIES,3.93,0.03,COGS
+NVIDIA Corp,Tata Motors Passenger Vehicles,Directed,SUPPLIES,0.21,0.03,COGS
+NVIDIA Corp,ePlus Inc,Directed,SUPPLIES,3.44,0.03,COGS
+NVIDIA Corp,DiDi Global Inc,Directed,SUPPLIES,0.3,0.03,COGS
+NVIDIA Corp,Pegatron Corp,Directed,SUPPLIES,0.21,0.03,COGS
+NVIDIA Corp,Denso Corp,Directed,SUPPLIES,0.15,0.03,COGS
+NVIDIA Corp,eBay Inc,Directed,SUPPLIES,13.42,0.02,CAPEX
+NVIDIA Corp,Taiwan Mobile Co Ltd,Directed,SUPPLIES,0.85,0.02,COGS
+NVIDIA Corp,Casino Guichard Perrachon SA,Directed,SUPPLIES,0.58,0.02,COGS
+NVIDIA Corp,Broadcom Inc,Directed,SUPPLIES,0.15,0.02,COGS
+NVIDIA Corp,Flex Ltd,Directed,SUPPLIES,0.18,0.02,COGS
+NVIDIA Corp,CECONOMY AG,Directed,SUPPLIES,0.17,0.02,COGS
+NVIDIA Corp,Corsair Gaming Inc,Directed,SUPPLIES,3.77,0.02,COGS
+NVIDIA Corp,Fortinet Inc,Directed,SUPPLIES,2.68,0.02,COGS
+NVIDIA Corp,Li Auto Inc,Directed,SUPPLIES,0.32,0.01,COGS
+NVIDIA Corp,ScanSource Inc,Directed,SUPPLIES,1.44,0.01,COGS
+NVIDIA Corp,NAVER Corp,Directed,SUPPLIES,8.55,0.01,CAPEX
+NVIDIA Corp,Snap Inc,Directed,SUPPLIES,13.42,0.01,CAPEX
+NVIDIA Corp,Dassault Systemes SE,Directed,SUPPLIES,2.88,0.01,COGS
+NVIDIA Corp,Adlink Technology Inc,Directed,SUPPLIES,11.08,0.01,COGS
+NVIDIA Corp,PC Connection Inc,Directed,SUPPLIES,0.98,0.01,COGS
+NVIDIA Corp,NIO Inc,Directed,SUPPLIES,0.3,0.01,COGS
+NVIDIA Corp,XPeng Inc,Directed,SUPPLIES,0.3,0.01,COGS
+NVIDIA Corp,Autodesk Inc,Directed,SUPPLIES,3.29,0.01,COGS
+NVIDIA Corp,Hella GmbH & Co KGaA,Directed,SUPPLIES,0.05,0.01,COGS
+NVIDIA Corp,PACCAR Inc,Directed,SUPPLIES,13.42,0.01,CAPEX
+NVIDIA Corp,Criteo SA,Directed,SUPPLIES,13.42,0.01,CAPEX
+NVIDIA Corp,ASE Technology Holding Co Ltd,Directed,SUPPLIES,0.08,0.01,COGS
+NVIDIA Corp,Polestar Automotive Holding UK,Directed,SUPPLIES,0.33,0.01,COGS
+NVIDIA Corp,ASROCK Inc,Directed,SUPPLIES,0.87,,COGS
+NVIDIA Corp,Valeo SE,Directed,SUPPLIES,0.07,,COGS
+NVIDIA Corp,Lucid Group Inc,Directed,SUPPLIES,0.33,,COGS
+NVIDIA Corp,Synopsys Inc,Directed,SUPPLIES,0.65,,COGS
+NVIDIA Corp,Ban Leong Technologies Ltd,Directed,SUPPLIES,0.37,,COGS
+NVIDIA Corp,Leadtek Research Inc,Directed,SUPPLIES,3.76,,COGS
+NVIDIA Corp,ZF Friedrichshafen AG,Directed,SUPPLIES,3.29,,COGS
+NVIDIA Corp,ANSYS Inc,Directed,SUPPLIES,0.02,,COGS
+NVIDIA Corp,Pinterest Inc,Directed,SUPPLIES,1.19,,COGS
+NVIDIA Corp,EXEO Group Inc,Directed,SUPPLIES,17.41,,CAPEX
+NVIDIA Corp,Schrodinger Inc/United States,Directed,SUPPLIES,0.11,,COGS
+NVIDIA Corp,Clevo Co,Directed,SUPPLIES,3.29,,COGS
+NVIDIA Corp,ON Semiconductor Corp,Directed,SUPPLIES,0.65,,COGS
+NVIDIA Corp,MDS Tech Inc,Directed,SUPPLIES,0.09,,COGS
+NVIDIA Corp,Tatung System Technologies Inc,Directed,SUPPLIES,2.9,,COGS
+NVIDIA Corp,Chaintech Technology Corp,Directed,SUPPLIES,1.25,,COGS
+NVIDIA Corp,CreateAI Holdings Inc,Directed,SUPPLIES,0.87,,COGS
+NVIDIA Corp,Zenrin Co Ltd,Directed,SUPPLIES,0.33,,COGS
+NVIDIA Corp,Jetway Information Co Ltd,Directed,SUPPLIES,0.3,,COGS
+NVIDIA Corp,Faraday Future Intelligent Ele,Directed,SUPPLIES,0.33,,COGS
+NVIDIA Corp,TomTom NV,Directed,SUPPLIES,0.71,,COGS
+NVIDIA Corp,Appro Photoelectron Inc,Directed,SUPPLIES,0.14,,COGS
+NVIDIA Corp,Daiichi Sankyo Co Ltd,Directed,SUPPLIES,0.98,,COGS
+NVIDIA Corp,HCL Technologies Ltd,Directed,SUPPLIES,,,
+NVIDIA Corp,Seven & i Holdings Co Ltd,Directed,SUPPLIES,,,
+NVIDIA Corp,Osaka University,Directed,SUPPLIES,,,
+NVIDIA Corp,Eurotech SpA,Directed,SUPPLIES,,,
+NVIDIA Corp,Oxford Nanopore Technologies P,Directed,SUPPLIES,,,
+NVIDIA Corp,Los Alamos National Laboratory,Directed,SUPPLIES,,,
+NVIDIA Corp,Nasdaq Inc,Directed,SUPPLIES,,,
+NVIDIA Corp,United States Department of En,Directed,SUPPLIES,,,
+NVIDIA Corp,DOD United States Army,Directed,SUPPLIES,,,
+NVIDIA Corp,Worley Ltd,Directed,SUPPLIES,,,
+NVIDIA Corp,Washington University/The,Directed,SUPPLIES,,,
+NVIDIA Corp,United States Postal Service,Directed,SUPPLIES,,,
+NVIDIA Corp,University of Stuttgart,Directed,SUPPLIES,,,
+NVIDIA Corp,University of California Berke,Directed,SUPPLIES,,,
+NVIDIA Corp,University of California Los A,Directed,SUPPLIES,,,
+NVIDIA Corp,University of Bristol,Directed,SUPPLIES,,,
+NVIDIA Corp,United Nations Organization,Directed,SUPPLIES,,,
+NVIDIA Corp,One Stop Systems Inc,Directed,SUPPLIES,,,
+NVIDIA Corp,Trend Micro Inc,Directed,SUPPLIES,,,
+NVIDIA Corp,Tokyo Electron Device Ltd,Directed,SUPPLIES,,,
+NVIDIA Corp,Tata Sons Pvt Ltd,Directed,SUPPLIES,,,
+NVIDIA Corp,Stanford University School of,Directed,SUPPLIES,,,
+NVIDIA Corp,Southern Methodist University,Directed,SUPPLIES,,,
+NVIDIA Corp,Sierra Technologies Inc,Directed,SUPPLIES,,,
+NVIDIA Corp,Sequoia Capital Operations LLC,Directed,SUPPLIES,,,
+NVIDIA Corp,Seoul National University,Directed,SUPPLIES,,,
+NVIDIA Corp,Saudi Arabian Oil Co,Directed,SUPPLIES,,,
+NVIDIA Corp,National Health Service,Directed,SUPPLIES,,,
+NVIDIA Corp,Shih Chien University,Directed,SUPPLIES,,,
+NVIDIA Corp,Partners Group Holding AG,Directed,SUPPLIES,,,
+NVIDIA Corp,Oak Ridge National Laboratory,Directed,SUPPLIES,,,
+NVIDIA Corp,National Chiao Tung University,Directed,SUPPLIES,,,
+NVIDIA Corp,National Cheng Kung University,Directed,SUPPLIES,,,
+NVIDIA Corp,Winmate Inc,Directed,SUPPLIES,,,
+NVIDIA Corp,Massachusetts Institute of Tec,Directed,SUPPLIES,,,
+NVIDIA Corp,Major League Baseball Blue Inc,Directed,SUPPLIES,,,
+NVIDIA Corp,Lotus Group International Ltd,Directed,SUPPLIES,,,
+ASML Holding NV,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,15.23,16.65,CAPEX
+Applied Materials Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,15.08,18.0,CAPEX
+Lam Research Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,8.37,18.0,CAPEX
+Tokyo Electron Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,4.88,17.0,CAPEX
+KLA Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.85,12.33,CAPEX
+Advantest Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.79,19.03,CAPEX
+Teradyne Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.73,14.35,CAPEX
+SCREEN Holdings Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.5,13.8,CAPEX
+Daifuku Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.45,4.38,COGS
+Shin-Etsu Chemical Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.18,26.3,CAPEX
+Lasertec Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.08,33.6,COGS
+Tokyo Ohka Kogyo Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,1.04,16.0,COGS
+Entegris Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.95,3.79,COGS
+AGC Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.88,1.15,RND
+Keysight Technologies Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.86,0.69,COGS
+BASF SE,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.77,8.0,COGS
+Qnity Electronics Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.77,8.0,COGS
+Air Liquide SA,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.66,,COGS
+Siltronic AG,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.66,25.4,CAPEX
+Kokusai Electric Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.59,12.9,CAPEX
+Onto Innovation Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.58,22.06,CAPEX
+Disco Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.57,8.25,CAPEX
+Toray Industries Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.55,1.69,COGS
+Nova Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.51,21.73,CAPEX
+Canon Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.47,0.59,CAPEX
+XinTec Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.34,73.67,COGS
+Organo Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.3,5.84,COGS
+SUMCO Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.43,33.74,CAPEX
+Kedge Construction Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.29,0.89,COGS
+Atlas Copco AB,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.29,17.6,CAPEX
+Rorze Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.3,,CAPEX
+Ebara Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.29,2.42,CAPEX
+Systems on Silicon Manufactu,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.27,,COGS
+Nikon Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.28,3.22,CAPEX
+Amkor Technology Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.25,1.68,COGS
+Formosa Sumco Technology Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.26,33.18,COGS
+Shibaura Mechatronics Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.29,22.7,COGS
+3M Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.24,0.47,COGS
+Veeco Instruments Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.24,17.01,CAPEX
+Samsung Electro-Mechanics Co L,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.18,1.16,COGS
+FormFactor Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.17,9.83,COGS
+Gudeng Precision Industrial Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.88,40.02,RND
+BE Semiconductor Industries NV,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.16,12.09,CAPEX
+RS Technologies Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.16,17.22,COGS
+Fujimi Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.16,16.0,COGS
+Camtek Ltd/Israel,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.17,15.21,CAPEX
+Ulvac Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.17,4.12,CAPEX
+Scientech Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.15,21.02,CAPEX
+Axcelis Technologies Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.14,7.54,CAPEX
+Tung Ho Steel Enterprise Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.12,2.69,COGS
+Cohu Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.11,10.51,CAPEX
+Wonik QnC Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.1,7.72,COGS
+ARM Holdings PLC,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.1,1.14,COGS
+Mitsubishi Gas Chemical Co Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.09,0.99,COGS
+Solvay SA,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.08,0.81,COGS
+Rasa Industries Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.09,12.4,COGS
+Allis Electric Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.07,1.48,COGS
+Materion Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.08,12.78,COGS
+Worldex Industry & Trading Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.07,2.1,COGS
+Japan Material Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.06,16.38,CAPEX
+Vanguard International Semicon,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.06,1.81,COGS
+Tazmo Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.08,10.54,CAPEX
+Ultra Clean Holdings Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.08,10.54,CAPEX
+S&S Tech Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.06,1.15,CAPEX
+SOITEC,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.04,12.72,COGS
+Advanced Energy Industries Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.04,3.9,CAPEX
+Hansol Chemical Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.04,1.06,COGS
+Wonik Materials Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.03,2.42,COGS
+DuPont de Nemours Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.03,6.08,COGS
+Global Unichip Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.02,0.08,COGS
+Hirata Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.02,0.76,CAPEX
+KoMiCo Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.02,1.09,CAPEX
+HORNG TERNG AUTOMATION CO LTD,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.02,1.77,CAPEX
+VAT Group AG,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.02,15.51,CAPEX
+Global Standard Technology Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.01,0.35,CAPEX
+LEENO Industrial Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.01,1.59,COGS
+Aehr Test Systems,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.01,1.36,CAPEX
+Duksan Hi-Metal Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.01,6.47,CAPEX
+DNF Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.01,1.16,COGS
+PDF Solutions Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,0.01,0.35,COGS
+Chang Chun Petrochemical Co Lt,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Wholetech System Hitech Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Progate Group Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Kinik Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Wonik Holdings Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Jetwell Computer Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Chen Full International Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+ABB Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+SK Materials Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Good Will Instrument Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Chien Kuo Construction Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Shuangliang Eco-Energy Systems,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Feedback Technology Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+P-Duke Technology Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+JX Advanced Metals Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+MPI Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+San Fu Chemical Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Genesis Technology Inc/Taiwan,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Lumax International Corp Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Marketech International Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+CTCI Advanced Systems Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+All Ring Tech Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+L&K Engineering Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+MiCo Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Linde PLC,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Cica-Huntek Chemical Technolog,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+KANTO-PPC Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Peric Special Gases Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Exyte Taiwan Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Gaonchips Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+BCnC Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+TXOne Networks Inc,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Lianyou Metals Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Alphawave IP Group PLC,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+EVERGREEN Steel Corp,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Hubei Sinophorus Electronic Ma,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Kingsemi Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+JG Environmental Technology Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Ventec International Group Co,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Grandit Co Ltd,Taiwan Semiconductor Manufacturing Co,Directed,SUPPLIES,,,
+Taiwan Semiconductor Manufacturing Co,Apple Inc,Directed,SUPPLIES,7.7,17.01,COGS
+Taiwan Semiconductor Manufacturing Co,Advanced Micro Devices Inc,Directed,SUPPLIES,37.35,5.2,COGS
+Taiwan Semiconductor Manufacturing Co,QUALCOMM Inc,Directed,SUPPLIES,30.96,5.11,COGS
+Taiwan Semiconductor Manufacturing Co,Broadcom Inc,Directed,SUPPLIES,22.95,4.23,COGS
+Taiwan Semiconductor Manufacturing Co,Amazon.com Inc,Directed,SUPPLIES,1.25,4.09,COGS
+Taiwan Semiconductor Manufacturing Co,MediaTek Inc,Directed,SUPPLIES,49.5,3.83,COGS
+Taiwan Semiconductor Manufacturing Co,Intel Corp,Directed,SUPPLIES,9.82,2.54,COGS
+Taiwan Semiconductor Manufacturing Co,Marvell Technology Inc,Directed,SUPPLIES,37.35,1.2,COGS
+Taiwan Semiconductor Manufacturing Co,Cisco Systems Inc,Directed,SUPPLIES,7.24,1.16,COGS
+Taiwan Semiconductor Manufacturing Co,Sony Group Corp,Directed,SUPPLIES,2.21,1.13,COGS
+Taiwan Semiconductor Manufacturing Co,Infineon Technologies AG,Directed,SUPPLIES,13.48,1.02,COGS
+Taiwan Semiconductor Manufacturing Co,STMicroelectronics NV,Directed,SUPPLIES,13.47,0.86,COGS
+Taiwan Semiconductor Manufacturing Co,Global Unichip Corp,Directed,SUPPLIES,,0.82,
+Taiwan Semiconductor Manufacturing Co,Analog Devices Inc,Directed,SUPPLIES,18.69,0.62,COGS
+Taiwan Semiconductor Manufacturing Co,NXP Semiconductors NV,Directed,SUPPLIES,13.48,0.61,COGS
+Taiwan Semiconductor Manufacturing Co,Texas Instruments Inc,Directed,SUPPLIES,8.81,0.51,COGS
+Taiwan Semiconductor Manufacturing Co,OmniVision Integrated Circuits,Directed,SUPPLIES,21.91,0.48,COGS
+Taiwan Semiconductor Manufacturing Co,ams-OSRAM AG,Directed,SUPPLIES,13.48,0.31,COGS
+Taiwan Semiconductor Manufacturing Co,Cirrus Logic Inc,Directed,SUPPLIES,37.35,0.3,COGS
+Taiwan Semiconductor Manufacturing Co,Alchip Technologies Ltd,Directed,SUPPLIES,61.99,0.28,COGS
+Taiwan Semiconductor Manufacturing Co,Renesas Electronics Corp,Directed,SUPPLIES,9.65,0.27,COGS
+Taiwan Semiconductor Manufacturing Co,Mobileye Global Inc,Directed,SUPPLIES,36.51,0.26,COGS
+Taiwan Semiconductor Manufacturing Co,Smartsens Technology Shanghai,Directed,SUPPLIES,33.03,0.25,COGS
+Taiwan Semiconductor Manufacturing Co,GigaDevice Semiconductor Inc,Directed,SUPPLIES,3.03,0.21,COGS
+Taiwan Semiconductor Manufacturing Co,Fortinet Inc,Directed,SUPPLIES,14.52,0.17,COGS
+Taiwan Semiconductor Manufacturing Co,Silicon Motion Technology Corp,Directed,SUPPLIES,35.36,0.15,COGS
+Taiwan Semiconductor Manufacturing Co,Credo Technology Group Holding,Directed,SUPPLIES,35.79,0.14,COGS
+Taiwan Semiconductor Manufacturing Co,Allegro MicroSystems Inc,Directed,SUPPLIES,37.35,0.14,COGS
+Taiwan Semiconductor Manufacturing Co,Himax Technologies Inc,Directed,SUPPLIES,31.04,0.13,COGS
+Taiwan Semiconductor Manufacturing Co,Raydium Semiconductor Corp,Directed,SUPPLIES,35.36,0.13,COGS
+Taiwan Semiconductor Manufacturing Co,Sitronix Technology Corp,Directed,SUPPLIES,35.36,0.11,COGS
+Taiwan Semiconductor Manufacturing Co,Cambricon Technologies Corp Lt,Directed,SUPPLIES,33.03,0.1,COGS
+Taiwan Semiconductor Manufacturing Co,LX Semicon Co Ltd,Directed,SUPPLIES,18.23,0.1,COGS
+Taiwan Semiconductor Manufacturing Co,Phison Electronics Corp,Directed,SUPPLIES,7.96,0.1,COGS
+Taiwan Semiconductor Manufacturing Co,NavInfo Co Ltd,Directed,SUPPLIES,32.73,0.1,COGS
+Taiwan Semiconductor Manufacturing Co,SG Micro Corp,Directed,SUPPLIES,53.26,0.12,COGS
+Taiwan Semiconductor Manufacturing Co,ASR Microelectronics Co Ltd,Directed,SUPPLIES,30.51,0.09,COGS
+Taiwan Semiconductor Manufacturing Co,Silicon Laboratories Inc,Directed,SUPPLIES,37.35,0.08,COGS
+Taiwan Semiconductor Manufacturing Co,Bestechnic Shanghai Co Ltd,Directed,SUPPLIES,33.03,0.08,COGS
+Taiwan Semiconductor Manufacturing Co,Shenzhen Goodix Technology Co,Directed,SUPPLIES,28.14,0.08,COGS
+Taiwan Semiconductor Manufacturing Co,Southchip Semiconductor Techno,Directed,SUPPLIES,33.02,0.08,COGS
+Taiwan Semiconductor Manufacturing Co,FocalTech Systems Co Ltd,Directed,SUPPLIES,35.36,0.07,COGS
+Taiwan Semiconductor Manufacturing Co,Socionext Inc,Directed,SUPPLIES,16.59,0.07,COGS
+Taiwan Semiconductor Manufacturing Co,Astera Labs Inc,Directed,SUPPLIES,37.35,0.07,COGS
+Taiwan Semiconductor Manufacturing Co,Shanghai Awinic Technology Co,Directed,SUPPLIES,33.03,0.07,COGS
+Taiwan Semiconductor Manufacturing Co,Netronix Inc,Directed,SUPPLIES,35.36,0.07,COGS
+Taiwan Semiconductor Manufacturing Co,MaxLinear Inc,Directed,SUPPLIES,37.35,0.06,COGS
+Taiwan Semiconductor Manufacturing Co,SiTime Corp,Directed,SUPPLIES,29.79,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Via Technologies Inc,Directed,SUPPLIES,0.32,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Avnet Inc,Directed,SUPPLIES,37.35,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Lattice Semiconductor Corp,Directed,SUPPLIES,37.35,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Impinj Inc,Directed,SUPPLIES,37.35,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Vanchip Tianjin Technology Co,Directed,SUPPLIES,28.94,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Ambarella Inc,Directed,SUPPLIES,37.35,0.05,COGS
+Taiwan Semiconductor Manufacturing Co,Shenzhen Injoinic Technology C,Directed,SUPPLIES,33.03,0.04,COGS
+Taiwan Semiconductor Manufacturing Co,EverProX Technologies Co Ltd,Directed,SUPPLIES,26.87,0.04,COGS
+Taiwan Semiconductor Manufacturing Co,indie Semiconductor Inc,Directed,SUPPLIES,35.17,0.04,COGS
+Taiwan Semiconductor Manufacturing Co,Ingenic Semiconductor Co Ltd,Directed,SUPPLIES,31.42,0.04,COGS
+Taiwan Semiconductor Manufacturing Co,Shanghai Fullhan Microelectron,Directed,SUPPLIES,4.2,0.04,COGS
+Taiwan Semiconductor Manufacturing Co,Vanguard International Semicon,Directed,SUPPLIES,13.48,0.03,COGS
+Taiwan Semiconductor Manufacturing Co,Nordic Semiconductor ASA,Directed,SUPPLIES,35.36,0.03,COGS
+Taiwan Semiconductor Manufacturing Co,Sunplus Technology Co Ltd,Directed,SUPPLIES,34.01,0.03,COGS
+Taiwan Semiconductor Manufacturing Co,ASPEED Technology Inc,Directed,SUPPLIES,32.92,0.02,COGS
+Taiwan Semiconductor Manufacturing Co,Halo Microelectronics Co Ltd,Directed,SUPPLIES,31.5,0.02,COGS
+Taiwan Semiconductor Manufacturing Co,Alcor Micro Corp/Taiwan,Directed,SUPPLIES,35.36,0.02,COGS
+Taiwan Semiconductor Manufacturing Co,Qingdao Eastsoft Communication,Directed,SUPPLIES,31.5,0.02,COGS
+Taiwan Semiconductor Manufacturing Co,Lantronix Inc,Directed,SUPPLIES,37.35,0.02,COGS
+Taiwan Semiconductor Manufacturing Co,Holtek Semiconductor Inc,Directed,SUPPLIES,35.14,0.01,COGS
+Taiwan Semiconductor Manufacturing Co,Sonix Technology Co Ltd,Directed,SUPPLIES,35.36,0.01,COGS
+Taiwan Semiconductor Manufacturing Co,Silicon Optronics Inc,Directed,SUPPLIES,35.25,0.01,COGS
+Taiwan Semiconductor Manufacturing Co,u-blox Holding AG,Directed,SUPPLIES,13.48,0.01,COGS
+Taiwan Semiconductor Manufacturing Co,Fortior Technology Shenzhen Co,Directed,SUPPLIES,33.03,0.01,COGS
+Taiwan Semiconductor Manufacturing Co,Qingdao Topscomm Communication,Directed,SUPPLIES,9.29,0.01,COGS
+Taiwan Semiconductor Manufacturing Co,Everspin Technologies Inc,Directed,SUPPLIES,37.35,,COGS
+Taiwan Semiconductor Manufacturing Co,Advanced Analog Technology Inc,Directed,SUPPLIES,59.95,,COGS
+Taiwan Semiconductor Manufacturing Co,Macroblock Inc,Directed,SUPPLIES,35.36,,COGS
+Taiwan Semiconductor Manufacturing Co,Anapass Inc,Directed,SUPPLIES,20.56,,COGS
+Taiwan Semiconductor Manufacturing Co,Butterfly Network Inc,Directed,SUPPLIES,21.45,,COGS
+Taiwan Semiconductor Manufacturing Co,IC Plus Corp,Directed,SUPPLIES,59.22,,COGS
+Taiwan Semiconductor Manufacturing Co,Navitas Semiconductor Corp,Directed,SUPPLIES,37.34,,COGS
+Taiwan Semiconductor Manufacturing Co,Aeva Technologies Inc,Directed,SUPPLIES,37.34,,COGS
+Taiwan Semiconductor Manufacturing Co,GSI Technology Inc,Directed,SUPPLIES,37.35,,COGS
+Taiwan Semiconductor Manufacturing Co,Prolific Technology Inc,Directed,SUPPLIES,35.37,,COGS
+Taiwan Semiconductor Manufacturing Co,Jiangsu Yitong High-Tech Co Lt,Directed,SUPPLIES,17.13,,COGS
+Taiwan Semiconductor Manufacturing Co,RDC Semiconductor Co Ltd,Directed,SUPPLIES,11.45,,COGS
+Taiwan Semiconductor Manufacturing Co,VisEra Technologies Co Ltd,Directed,SUPPLIES,0.87,,RND
+Taiwan Semiconductor Manufacturing Co,XinTec Inc,Directed,SUPPLIES,0.02,,COGS
+Taiwan Semiconductor Manufacturing Co,HCL Technologies Ltd,Directed,SUPPLIES,,,
+Taiwan Semiconductor Manufacturing Co,Princeton Technology Corp,Directed,SUPPLIES,,,
+Taiwan Semiconductor Manufacturing Co,Sequans Communications SA,Directed,SUPPLIES,,,
+Taiwan Semiconductor Manufacturing Co,Monolithic Power Systems Inc,Directed,SUPPLIES,,,
+Taiwan Semiconductor Manufacturing Co,Progate Group Corp,Directed,SUPPLIES,,,
+Taiwan Semiconductor Manufacturing Co,Fortune Information Systems Co,Directed,SUPPLIES,,,
+Carl Zeiss SMT AG,ASML Holding NV,Directed,SUPPLIES,28.01,,COGS
+Nikon Corp,ASML Holding NV,Directed,SUPPLIES,1.98,1.02,CAPEX
+Benchmark Electronics Inc,ASML Holding NV,Directed,SUPPLIES,0.95,6.17,COGS
+VAT Group AG,ASML Holding NV,Directed,SUPPLIES,0.95,16.34,COGS
+Entegris Inc,ASML Holding NV,Directed,SUPPLIES,0.79,4.15,COGS
+Coherent Corp,ASML Holding NV,Directed,SUPPLIES,0.73,1.95,COGS
+Ultra Clean Holdings Inc,ASML Holding NV,Directed,SUPPLIES,0.67,5.61,COGS
+MKS Inc,ASML Holding NV,Directed,SUPPLIES,0.66,2.66,COGS
+Enpro Inc,ASML Holding NV,Directed,SUPPLIES,0.31,6.01,COGS
+Sinbon Electronics Co Ltd,ASML Holding NV,Directed,SUPPLIES,0.1,1.61,COGS
+Lumentum Holdings Inc,ASML Holding NV,Directed,SUPPLIES,0.07,0.6,COGS
+Alten SA,ASML Holding NV,Directed,SUPPLIES,0.01,0.93,COGS
+NVIDIA Corp,ASML Holding NV,Directed,SUPPLIES,,,
+ASML Holding NV,Samsung Electronics Co Ltd,Directed,SUPPLIES,15.66,13.9,CAPEX
+ASML Holding NV,Intel Corp,Directed,SUPPLIES,34.55,9.54,CAPEX
+ASML Holding NV,SK hynix Inc,Directed,SUPPLIES,18.51,7.65,CAPEX
+ASML Holding NV,Micron Technology Inc,Directed,SUPPLIES,11.2,7.26,CAPEX
+ASML Holding NV,Semiconductor Manufacturing In,Directed,SUPPLIES,18.8,5.3,CAPEX
+ASML Holding NV,United Microelectronics Corp,Directed,SUPPLIES,19.28,1.22,CAPEX
+ASML Holding NV,Hua Hong Semiconductor Ltd,Directed,SUPPLIES,19.04,0.48,CAPEX
+ASML Holding NV,GLOBALFOUNDRIES Inc,Directed,SUPPLIES,18.8,0.4,CAPEX
+ASML Holding NV,Nanya Technology Corp,Directed,SUPPLIES,18.72,0.2,CAPEX
+ASML Holding NV,Nikon Corp,Directed,SUPPLIES,12.26,0.09,CAPEX
+SK ecoplant Co Ltd,SK hynix Inc,Directed,SUPPLIES,18.19,35.56,CAPEX
+Lam Research Corp,SK hynix Inc,Directed,SUPPLIES,5.24,3.56,CAPEX
+SK Inc,SK hynix Inc,Directed,SUPPLIES,3.34,1.42,CAPEX
+Applied Materials Inc,SK hynix Inc,Directed,SUPPLIES,4.41,1.48,COGS
+KLA Corp,SK hynix Inc,Directed,SUPPLIES,2.06,49.74,COGS
+Hana Micron Inc,SK hynix Inc,Directed,SUPPLIES,2.03,10.23,COGS
+Wuxi Taiji Industry Ltd Co,SK hynix Inc,Directed,SUPPLIES,1.43,2.42,COGS
+Shin-Etsu Chemical Co Ltd,SK hynix Inc,Directed,SUPPLIES,1.4,,CAPEX
+Onto Innovation Inc,SK hynix Inc,Directed,SUPPLIES,1.4,17.06,CAPEX
+Air Liquide SA,SK hynix Inc,Directed,SUPPLIES,1.12,3.35,CAPEX
+Chart Industries Inc,SK hynix Inc,Directed,SUPPLIES,1.03,58.73,CAPEX
+SK hynix Inc,Microsoft Corp,Directed,SUPPLIES,5.01,8.88,CAPEX
+SK hynix Inc,Apple Inc,Directed,SUPPLIES,1.89,8.3,COGS
+SK hynix Inc,Alphabet Inc,Directed,SUPPLIES,4.43,7.32,CAPEX
+SK hynix Inc,Amazon.com Inc,Directed,SUPPLIES,2.96,6.94,CAPEX
+SK hynix Inc,Meta Platforms Inc,Directed,SUPPLIES,5.14,6.51,CAPEX
+SK hynix Inc,Xiaomi Corp,Directed,SUPPLIES,5.3,4.15,COGS
+SK hynix Inc,Dell Technologies Inc,Directed,SUPPLIES,1.69,2.59,COGS
+SK hynix Inc,Asustek Computer Inc,Directed,SUPPLIES,9.66,2.34,COGS
+SK hynix Inc,SK ecoplant Co Ltd,Directed,SUPPLIES,17.5,2.21,COGS
+SK hynix Inc,Lenovo Group Ltd,Directed,SUPPLIES,1.91,2.13,COGS
+SK hynix Inc,HP Inc,Directed,SUPPLIES,2.54,1.76,COGS
+SK hynix Inc,Intel Corp,Directed,SUPPLIES,2.84,1.47,COGS
+SK hynix Inc,Quanta Computer Inc,Directed,SUPPLIES,1.59,1.39,COGS
+SK hynix Inc,Super Micro Computer Inc,Directed,SUPPLIES,1.2,1.07,COGS
+Advanced Micro Devices Inc,Wistron Corp,Directed,SUPPLIES,0.7,1.56,COGS
+Guangdong Ellington Electronic,Wistron Corp,Directed,SUPPLIES,0.14,10.81,COGS
+Yageo Corp,Wistron Corp,Directed,SUPPLIES,0.13,1.33,COGS
+Wiwynn Corp,Wistron Corp,Directed,SUPPLIES,0.11,0.31,COGS
+NXP Semiconductors NV,Wistron Corp,Directed,SUPPLIES,0.09,4.6,COGS
+Astera Labs Inc,Wistron Corp,Directed,SUPPLIES,0.08,13.21,COGS
+Intel Corp,Wistron Corp,Directed,SUPPLIES,0.03,0.02,SGA
+Wistron Corp,Apple Inc,Directed,SUPPLIES,1.59,6.45,COGS
+Wistron Corp,Lenovo Group Ltd,Directed,SUPPLIES,5.95,6.13,COGS
+Wistron Corp,Wiwynn Corp,Directed,SUPPLIES,9.18,4.54,COGS
+Wistron Corp,HP Inc,Directed,SUPPLIES,6.67,4.27,COGS
+Wistron Corp,Hewlett Packard Enterprise Co,Directed,SUPPLIES,8.07,2.78,COGS
+Wistron Corp,Xiaomi Corp,Directed,SUPPLIES,3.26,2.09,COGS
+Wistron Corp,Acer Inc,Directed,SUPPLIES,8.73,1.0,COGS
+Nikon Corp,Carl Zeiss SMT AG,Directed,SUPPLIES,,,
+Carl Zeiss SMT AG,Nikon Corp,Directed,SUPPLIES,,,
+Carl Zeiss SMT AG,Intel Corp,Directed,SUPPLIES,,,
+Konica Minolta Inc,Nikon Corp,Directed,SUPPLIES,6.94,0.24,CAPEX
+Restar Corp,Nikon Corp,Directed,SUPPLIES,5.79,3.78,COGS
+Alibaba Group Holding Ltd,Nikon Corp,Directed,SUPPLIES,2.34,0.02,SGA
+Coherent Corp,Nikon Corp,Directed,SUPPLIES,1.12,0.44,COGS
+Nikon Corp,Intel Corp,Directed,SUPPLIES,0.9,3.08,CAPEX
+Nikon Corp,Dick's Sporting Goods Inc,Directed,SUPPLIES,1.03,1.89,COGS
+Nikon Corp,Best Buy Co Inc,Directed,SUPPLIES,0.19,1.25,COGS
+Lam Research Corp,Micron Technology Inc,Directed,SUPPLIES,5.24,5.28,CAPEX
+Applied Materials Inc,Micron Technology Inc,Directed,SUPPLIES,4.08,3.16,CAPEX
+KLA Corp,Micron Technology Inc,Directed,SUPPLIES,3.03,4.96,CAPEX
+Powertech Technology Inc,Micron Technology Inc,Directed,SUPPLIES,2.34,21.02,COGS
+Jabil Inc,Micron Technology Inc,Directed,SUPPLIES,1.74,1.29,COGS
+Shin-Etsu Chemical Co Ltd,Micron Technology Inc,Directed,SUPPLIES,1.45,2.03,COGS
+Atlas Copco AB,Micron Technology Inc,Directed,SUPPLIES,0.97,1.4,COGS
+Silicon Motion Technology Corp,Micron Technology Inc,Directed,SUPPLIES,0.74,19.0,COGS
+Ultra Clean Holdings Inc,Micron Technology Inc,Directed,SUPPLIES,0.22,29.58,COGS
+SIMMTECH HOLDINGS Co Ltd,Micron Technology Inc,Directed,SUPPLIES,0.61,13.22,COGS
+Analog Devices Inc,Micron Technology Inc,Directed,SUPPLIES,0.45,0.91,COGS
+ChipMOS Technologies Inc,Micron Technology Inc,Directed,SUPPLIES,0.42,12.65,COGS
+Hiroshima Gas Co Ltd,Micron Technology Inc,Directed,SUPPLIES,0.41,14.39,COGS
+Nova Ltd,Micron Technology Inc,Directed,SUPPLIES,,,COGS
+Hangzhou Chang Chuan Technolog,Micron Technology Inc,Directed,SUPPLIES,0.36,9.14,CAPEX
+Rambus Inc,Micron Technology Inc,Directed,SUPPLIES,0.33,12.13,COGS
+Global Standard Technology Co,Micron Technology Inc,Directed,SUPPLIES,0.3,23.68,CAPEX
+Siltronic AG,Micron Technology Inc,Directed,SUPPLIES,0.3,5.07,COGS
+Micronics Japan Co Ltd,Micron Technology Inc,Directed,SUPPLIES,0.29,15.98,COGS
+SIMMTECH Co Ltd,Micron Technology Inc,Directed,SUPPLIES,0.27,6.33,COGS
+Tokyo Ohka Kogyo Co Ltd,Micron Technology Inc,Directed,SUPPLIES,0.26,,COGS
+Japan Electronic Materials Cor,Micron Technology Inc,Directed,SUPPLIES,0.22,29.58,COGS
+Kinsus Interconnect Technology,Micron Technology Inc,Directed,SUPPLIES,0.2,3.56,COGS
+Micron Technology Inc,WPG Holdings Ltd,Directed,SUPPLIES,15.77,9.06,COGS
+Micron Technology Inc,Lenovo Group Ltd,Directed,SUPPLIES,3.57,4.93,COGS
+Micron Technology Inc,Microsoft Corp,Directed,SUPPLIES,2.18,4.76,CAPEX
+Micron Technology Inc,Dell Technologies Inc,Directed,SUPPLIES,2.88,4.52,COGS
+Micron Technology Inc,Apple Inc,Directed,SUPPLIES,0.79,4.32,COGS
+Micron Technology Inc,Amazon.com Inc,Directed,SUPPLIES,0.9,2.59,CAPEX
+Micron Technology Inc,Super Micro Computer Inc,Directed,SUPPLIES,1.34,1.17,COGS
+Micron Technology Inc,RYODEN CORP,Directed,SUPPLIES,9.6,0.27,COGS
+Micron Technology Inc,Macnica Holdings Inc,Directed,SUPPLIES,2.94,0.37,COGS
+Micron Technology Inc,Advanced Micro Devices Inc,Directed,SUPPLIES,2.93,1.01,COGS
+Micron Technology Inc,Sanmina Corp,Directed,SUPPLIES,2.69,0.53,COGS
+Micron Technology Inc,WT Microelectronics Co Ltd,Directed,SUPPLIES,1.75,1.36,COGS
+Micron Technology Inc,Intel Corp,Directed,SUPPLIES,1.16,0.59,COGS
+Micron Technology Inc,Asustek Computer Inc,Directed,SUPPLIES,1.4,0.69,COGS
+Micron Technology Inc,Juniper Networks Inc,Directed,SUPPLIES,1.78,0.12,COGS
+Micron Technology Inc,HP Inc,Directed,SUPPLIES,0.89,0.76,COGS
+Micron Technology Inc,Quanta Computer Inc,Directed,SUPPLIES,0.67,0.75,COGS
+Micron Technology Inc,IEIT Systems Co Ltd,Directed,SUPPLIES,1.41,0.71,COGS
+Micron Technology Inc,Avnet Inc,Directed,SUPPLIES,1.63,0.68,COGS
+Micron Technology Inc,NetApp Inc,Directed,SUPPLIES,1.45,0.09,COGS
+Flex Ltd,Teradyne Inc,Directed,SUPPLIES,2.89,0.13,COGS
+Analog Devices Inc,Teradyne Inc,Directed,SUPPLIES,0.46,0.04,COGS
+TTM Technologies Inc,Teradyne Inc,Directed,SUPPLIES,0.4,0.17,COGS
+inTEST Corp,Teradyne Inc,Directed,SUPPLIES,0.07,0.88,COGS
+Teradyne Inc,Samsung Electronics Co Ltd,Directed,SUPPLIES,0.93,12.5,CAPEX
+Teradyne Inc,Amazon.com Inc,Directed,SUPPLIES,0.11,4.63,CAPEX
+Teradyne Inc,King Yuan Electronics Co Ltd,Directed,SUPPLIES,6.88,2.0,CAPEX
+Teradyne Inc,SK hynix Inc,Directed,SUPPLIES,0.26,1.96,CAPEX
+Teradyne Inc,ASE Technology Holding Co Ltd,Directed,SUPPLIES,0.69,0.79,CAPEX
+Teradyne Inc,QUALCOMM Inc,Directed,SUPPLIES,1.86,0.69,CAPEX
+GoerTek Inc,Meta Platforms Inc,Directed,SUPPLIES,12.23,26.38,COGS
+Broadcom Inc,Meta Platforms Inc,Directed,SUPPLIES,2.82,15.0,CAPEX
+Arista Networks Inc,Meta Platforms Inc,Directed,SUPPLIES,2.63,9.95,COGS
+Acton Technology Corp,Meta Platforms Inc,Directed,SUPPLIES,2.56,15.12,CAPEX
+Celestica Inc,Meta Platforms Inc,Directed,SUPPLIES,2.55,5.49,CAPEX
+Advanced Micro Devices Inc,Meta Platforms Inc,Directed,SUPPLIES,2.33,1.9,COGS
+QUALCOMM Inc,Meta Platforms Inc,Directed,SUPPLIES,1.79,12.69,CAPEX
+Western Digital Corp,Meta Platforms Inc,Directed,SUPPLIES,1.27,26.0,SGA
+Microsoft Corp,Meta Platforms Inc,Directed,SUPPLIES,0.63,3.19,CAPEX
+CoreWeave Inc,Meta Platforms Inc,Directed,SUPPLIES,0.84,0.81,CAPEX
+Broadcom Inc,Super Micro Computer Inc,Directed,SUPPLIES,1.84,0.46,COGS
+Intel Corp,Super Micro Computer Inc,Directed,SUPPLIES,1.64,0.55,COGS
+Western Digital Corp,Super Micro Computer Inc,Directed,SUPPLIES,1.19,4.68,COGS
+Seagate Technology Holdings PL,Super Micro Computer Inc,Directed,SUPPLIES,1.17,1.89,COGS
+Advanced Micro Devices Inc,Super Micro Computer Inc,Directed,SUPPLIES,1.13,0.77,COGS
+Monolithic Power Systems Inc,Super Micro Computer Inc,Directed,SUPPLIES,0.02,0.18,COGS
+Super Micro Computer Inc,Arrow Electronics Inc,Directed,SUPPLIES,2.29,3.01,COGS
+Super Micro Computer Inc,TD SYNNEX Corp,Directed,SUPPLIES,0.3,0.98,COGS
+Super Micro Computer Inc,International Business Machine,Directed,SUPPLIES,0.61,0.87,COGS
+Super Micro Computer Inc,CDW Corp/DE,Directed,SUPPLIES,0.65,0.58,COGS
+Affle 3i Ltd,Ultra Clean Holdings Inc,Directed,SUPPLIES,,,
+Mapletree Industrial Trust,Ultra Clean Holdings Inc,Directed,SUPPLIES,,,
+PPL Corp,Ultra Clean Holdings Inc,Directed,SUPPLIES,,,
+PG&E Corp,Ultra Clean Holdings Inc,Directed,SUPPLIES,,,
+Ultra Clean Holdings Inc,Lam Research Corp,Directed,SUPPLIES,7.36,37.0,COGS
+Ultra Clean Holdings Inc,Applied Materials Inc,Directed,SUPPLIES,3.08,21.7,COGS
+Ultra Clean Holdings Inc,SK hynix Inc,Directed,SUPPLIES,0.41,1.87,CAPEX
+Ultra Clean Holdings Inc,KLA Corp,Directed,SUPPLIES,0.67,1.64,COGS
+Ultra Clean Holdings Inc,Samsung Electronics Co Ltd,Directed,SUPPLIES,0.08,1.19,CAPEX
+Ultra Clean Holdings Inc,Intel Corp,Directed,SUPPLIES,0.23,1.08,CAPEX
+Nokia Oyj,SK Inc,Directed,SUPPLIES,,,
+SK ecoplant Co Ltd,SK Inc,Directed,SUPPLIES,1.41,0.33,CAPEX
+Saudi Basic Industries Corp,SK Inc,Directed,SUPPLIES,0.46,0.4,CAPEX
+SMCore Inc,SK Inc,Directed,SUPPLIES,0.45,1.02,COGS
+Sumitomo Chemical Co Ltd,SK Inc,Directed,SUPPLIES,0.32,20.62,CAPEX
+SK Inc,Samsung Electronics Co Ltd,Directed,SUPPLIES,0.48,0.79,COGS
+SK Inc,SK Telecom Co Ltd,Directed,SUPPLIES,5.67,0.5,SGA
+SK Inc,DB HiTek Co Ltd,Directed,SUPPLIES,11.96,0.1,COGS
+Celestica Inc,Applied Materials Inc,Directed,SUPPLIES,2.76,3.05,COGS
+Advanced Energy Industries Inc,Applied Materials Inc,Directed,SUPPLIES,2.67,26.0,COGS
+Benchmark Electronics Inc,Applied Materials Inc,Directed,SUPPLIES,2.57,14.0,COGS
+Ichor Holdings Ltd,Applied Materials Inc,Directed,SUPPLIES,2.57,39.22,COGS
+MKS Inc,Applied Materials Inc,Directed,SUPPLIES,2.36,9.1,COGS
+Enpro Inc,Applied Materials Inc,Directed,SUPPLIES,1.66,20.08,COGS
+VAT Group AG,Applied Materials Inc,Directed,SUPPLIES,1.24,13.25,COGS
+Entegris Inc,Applied Materials Inc,Directed,SUPPLIES,0.79,3.46,COGS
+Jabil Inc,Applied Materials Inc,Directed,SUPPLIES,0.37,18.8,COGS
+Applied Materials Inc,Samsung Electronics Co Ltd,Directed,SUPPLIES,13.48,17.0,CAPEX
+Applied Materials Inc,Intel Corp,Directed,SUPPLIES,5.23,2.54,CAPEX
+Applied Materials Inc,BOE Technology Group Co Ltd,Directed,SUPPLIES,5.21,1.21,CAPEX
+Daihen Corp,Tokyo Electron Ltd,Directed,SUPPLIES,2.79,15.86,COGS
+Resonac Holdings Corp,Tokyo Electron Ltd,Directed,SUPPLIES,2.27,2.44,COGS
+Naigai Tec Corp,Tokyo Electron Ltd,Directed,SUPPLIES,1.97,71.8,COGS
+Hana Micron Inc,Tokyo Electron Ltd,Directed,SUPPLIES,1.47,11.07,COGS
+Hana Materials Inc,Tokyo Electron Ltd,Directed,SUPPLIES,1.37,64.38,COGS
+Tocalo Co Ltd,Tokyo Electron Ltd,Directed,SUPPLIES,1.15,27.2,COGS
+MKS Inc,Tokyo Electron Ltd,Directed,SUPPLIES,0.91,0.4,COGS
+Toray Industries Inc,Tokyo Electron Ltd,Directed,SUPPLIES,0.79,21.8,COGS
+Entegris Inc,Tokyo Electron Ltd,Directed,SUPPLIES,0.59,3.62,COGS
+VAT Group AG,Tokyo Electron Ltd,Directed,SUPPLIES,0.59,8.68,COGS
+Tokyo Electron Ltd,Samsung Electronics Co Ltd,Directed,SUPPLIES,5.23,11.8,CAPEX
+Tokyo Electron Ltd,Intel Corp,Directed,SUPPLIES,5.81,3.3,CAPEX
+Tokyo Electron Ltd,Texas Instruments Inc,Directed,SUPPLIES,5.81,1.63,CAPEX
+Tokyo Electron Ltd,ASE Technology Holding Co Ltd,Directed,SUPPLIES,2.43,0.86,CAPEX
+Tokyo Electron Ltd,SK hynix Inc,Directed,SUPPLIES,5.83,0.51,CAPEX
+Tokyo Electron Ltd,King Yuan Electronics Co Ltd,Directed,SUPPLIES,5.42,,CAPEX
+Hon Hai Precision Industry Co,Amazon.com Inc,Directed,SUPPLIES,7.99,4.43,CAPEX
+Jabil Inc,Amazon.com Inc,Directed,SUPPLIES,5.01,16.0,CAPEX
+United Parcel Service Inc,Amazon.com Inc,Directed,SUPPLIES,2.64,10.6,COGS
+Broadcom Inc,Amazon.com Inc,Directed,SUPPLIES,0.41,0.8,CAPEX
+Intel Corp,Amazon.com Inc,Directed,SUPPLIES,0.9,2.59,COGS
+Amazon.com Inc,TD SYNNEX Corp,Directed,SUPPLIES,4.02,0.21,COGS
+Amazon.com Inc,International Business Machine,Directed,SUPPLIES,2.25,0.17,COGS
+MKS Inc,Lam Research Corp,Directed,SUPPLIES,3.65,9.38,COGS
+Ichor Holdings Ltd,Lam Research Corp,Directed,SUPPLIES,3.4,37.08,COGS
+Celestica Inc,Lam Research Corp,Directed,SUPPLIES,3.31,2.74,COGS
+Advanced Energy Industries Inc,Lam Research Corp,Directed,SUPPLIES,1.92,11.0,COGS
+VAT Group AG,Lam Research Corp,Directed,SUPPLIES,1.77,14.23,COGS
+Ferrotec Corp,Lam Research Corp,Directed,SUPPLIES,1.34,7.41,COGS
+Entegris Inc,Lam Research Corp,Directed,SUPPLIES,0.58,9.06,COGS
+Lam Research Corp,Samsung Electronics Co Ltd,Directed,SUPPLIES,10.29,15.01,CAPEX
+Lam Research Corp,Intel Corp,Directed,SUPPLIES,3.9,2.54,CAPEX
+Lam Research Corp,Kioxia Holdings Corp,Directed,SUPPLIES,5.24,0.6,CAPEX
+Hon Hai Precision Industry Co,Microsoft Corp,Directed,SUPPLIES,17.83,5.24,CAPEX
+Pegatron Corp,Microsoft Corp,Directed,SUPPLIES,3.78,10.49,COGS
+CoreWeave Inc,Microsoft Corp,Directed,SUPPLIES,3.58,67.0,COGS
+Samsung Electronics Co Ltd,Microsoft Corp,Directed,SUPPLIES,3.2,1.02,CAPEX
+Arista Networks Inc,Microsoft Corp,Directed,SUPPLIES,2.53,3.81,COGS
+Cisco Systems Inc,Microsoft Corp,Directed,SUPPLIES,2.18,2.87,COGS
+Marvell Technology Inc,Microsoft Corp,Directed,SUPPLIES,0.88,1.52,COGS
+Broadcom Inc,Microsoft Corp,Directed,SUPPLIES,0.88,7.53,COGS
+Intel Corp,Microsoft Corp,Directed,SUPPLIES,0.85,1.74,SGA
+Microsoft Corp,TD SYNNEX Corp,Directed,SUPPLIES,4.75,0.95,COGS
+Microsoft Corp,Insight Enterprises Inc,Directed,SUPPLIES,32.0,0.68,COGS
+Microsoft Corp,Dell Technologies Inc,Directed,SUPPLIES,0.61,0.16,COGS
+Broadcom Inc,Celestica Inc,Directed,SUPPLIES,0.87,0.13,COGS
+Yageo Corp,Celestica Inc,Directed,SUPPLIES,0.13,0.33,COGS
+Firan Technology Group Corp,Celestica Inc,Directed,SUPPLIES,0.08,6.86,COGS
+Loyalty Founder Enterprise Co,Celestica Inc,Directed,SUPPLIES,0.06,4.0,COGS
+Vishay Intertechnology Inc,Celestica Inc,Directed,SUPPLIES,0.01,0.06,COGS
+Celestica Inc,Alphabet Inc,Directed,SUPPLIES,4.01,30.05,CAPEX
+Celestica Inc,Amazon.com Inc,Directed,SUPPLIES,2.3,5.01,COGS
+Celestica Inc,Honeywell International Inc,Directed,SUPPLIES,1.34,4.93,COGS
+Celestica Inc,HP Inc,Directed,SUPPLIES,0.71,4.77,COGS
+Celestica Inc,Dell Technologies Inc,Directed,SUPPLIES,2.76,3.05,COGS
+Celestica Inc,Hewlett Packard Enterprise Co,Directed,SUPPLIES,3.31,2.74,COGS
+Celestica Inc,Medtronic PLC,Directed,SUPPLIES,1.19,2.0,COGS
+Celestica Inc,Oracle Corp,Directed,SUPPLIES,0.11,0.89,COGS
+Celestica Inc,Boeing Co/The,Directed,SUPPLIES,0.39,0.86,COGS
+Celestica Inc,International Business Machine,Directed,SUPPLIES,3.22,0.72,COGS
+Celestica Inc,Juniper Networks Inc,Directed,SUPPLIES,0.11,0.6,COGS
+Celestica Inc,Cisco Systems Inc,Directed,SUPPLIES,0.11,0.06,COGS
+nLight Inc,MKS Inc,Directed,SUPPLIES,0.22,1.7,COGS
+Lumentum Holdings Inc,MKS Inc,Directed,SUPPLIES,0.03,0.03,COGS
+MKS Inc,Samsung Electronics Co Ltd,Directed,SUPPLIES,0.62,5.5,CAPEX
+MKS Inc,SIMMTECH Co Ltd,Directed,SUPPLIES,11.47,2.63,COGS
+MKS Inc,Unimicron Technology Corp,Directed,SUPPLIES,1.41,1.2,COGS
+MKS Inc,KLA Corp,Directed,SUPPLIES,0.66,0.83,COGS
+MKS Inc,TTM Technologies Inc,Directed,SUPPLIES,1.41,0.78,COGS
+MKS Inc,STMicroelectronics NV,Directed,SUPPLIES,1.15,0.66,CAPEX
+MKS Inc,Ibiden Co Ltd,Directed,SUPPLIES,0.75,0.33,COGS
+MKS Inc,LG Electronics Inc,Directed,SUPPLIES,0.03,0.42,COGS
+Emera Inc,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Custodian Property Income Reit,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Portland General Electric Co,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Xcel Energy Inc,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Fortis Inc/Canada,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+PG&E Corp,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Duke Energy Corp,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Berkshire Hathaway Inc,Ichor Holdings Ltd,Directed,SUPPLIES,,,
+Ichor Holdings Ltd,ASML Holding NV,Directed,SUPPLIES,,,
+Compal Electronics Inc,Dell Technologies Inc,Directed,SUPPLIES,13.73,41.68,COGS
+Intel Corp,Dell Technologies Inc,Directed,SUPPLIES,6.48,19.04,COGS
+Hon Hai Precision Industry Co,Dell Technologies Inc,Directed,SUPPLIES,2.88,1.24,COGS
+BOE Technology Group Co Ltd,Dell Technologies Inc,Directed,SUPPLIES,1.78,5.36,COGS
+BYD Co Ltd,Dell Technologies Inc,Directed,SUPPLIES,1.69,1.56,COGS
+Kioxia Holdings Corp,Dell Technologies Inc,Directed,SUPPLIES,,8.43,COGS
+Delta Electronics Inc,Dell Technologies Inc,Directed,SUPPLIES,1.35,4.26,COGS
+Advanced Micro Devices Inc,Dell Technologies Inc,Directed,SUPPLIES,1.32,4.89,COGS
+Inventec Corp,Dell Technologies Inc,Directed,SUPPLIES,1.1,3.68,COGS
+TCL Technology Group Corp,Dell Technologies Inc,Directed,SUPPLIES,1.06,8.02,COGS
+Seagate Technology Holdings PL,Dell Technologies Inc,Directed,SUPPLIES,1.03,2.86,COGS
+Luxshare Precision Industry Co,Dell Technologies Inc,Directed,SUPPLIES,1.02,1.21,COGS
+Broadcom Inc,Dell Technologies Inc,Directed,SUPPLIES,0.71,4.77,COGS
+Micro-Star International Co Lt,Dell Technologies Inc,Directed,SUPPLIES,0.63,8.43,COGS
+Innolux Corp,Dell Technologies Inc,Directed,SUPPLIES,0.63,1.75,COGS
+Flex Ltd,Dell Technologies Inc,Directed,SUPPLIES,0.62,4.37,COGS
+Western Digital Corp,Dell Technologies Inc,Directed,SUPPLIES,0.61,0.16,COGS
+Qisda Corp,Dell Technologies Inc,Directed,SUPPLIES,0.54,1.22,COGS
+Pegatron Corp,Dell Technologies Inc,Directed,SUPPLIES,0.54,1.22,COGS
+Dell Technologies Inc,CoreWeave Inc,Directed,SUPPLIES,14.68,1.21,CAPEX
+Dell Technologies Inc,Arrow Electronics Inc,Directed,SUPPLIES,4.38,1.11,COGS
+Dell Technologies Inc,TD SYNNEX Corp,Directed,SUPPLIES,1.64,0.47,COGS
+Dell Technologies Inc,Best Buy Co Inc,Directed,SUPPLIES,2.57,0.45,COGS
+Dell Technologies Inc,CDW Corp/DE,Directed,SUPPLIES,0.49,0.36,COGS
+Dell Technologies Inc,Alibaba Group Holding Ltd,Directed,SUPPLIES,3.41,0.3,COGS
+Dell Technologies Inc,Computacenter PLC,Directed,SUPPLIES,6.19,0.29,COGS
+Dell Technologies Inc,Insight Enterprises Inc,Directed,SUPPLIES,3.22,0.28,COGS
+Dell Technologies Inc,Redington Ltd,Directed,SUPPLIES,0.1,0.27,COGS
+Dell Technologies Inc,Amazon.com Inc,Directed,SUPPLIES,0.04,0.18,COGS
+Dell Technologies Inc,Walmart Inc,Directed,SUPPLIES,8.57,0.18,COGS
+Dell Technologies Inc,PC Connection Inc,Directed,SUPPLIES,1.29,0.15,COGS
+Dell Technologies Inc,Leidos Holdings Inc,Directed,SUPPLIES,0.48,0.11,COGS
+Dell Technologies Inc,International Business Machine,Directed,SUPPLIES,6.66,0.11,COGS
+Dell Technologies Inc,ALSO Holding AG,Directed,SUPPLIES,14.68,0.1,CAPEX
+Dell Technologies Inc,ServiceNow Inc,Directed,SUPPLIES,0.04,0.09,COGS
+Dell Technologies Inc,Costco Wholesale Corp,Directed,SUPPLIES,0.04,0.07,COGS
+Dell Technologies Inc,Atos SE,Directed,SUPPLIES,0.83,0.07,COGS
+Dell Technologies Inc,Bechtle AG,Directed,SUPPLIES,0.19,0.06,COGS
+Dell Technologies Inc,METRO AG,Directed,SUPPLIES,0.32,0.05,COGS
+Dell Technologies Inc,DCC PLC,Directed,SUPPLIES,0.24,0.05,COGS
+Dell Technologies Inc,Avnet Inc,Directed,SUPPLIES,0.54,0.05,COGS
+Dell Technologies Inc,VSTECS Holdings Ltd,Directed,SUPPLIES,,0.05,COGS
+Broadcom Inc,Wiwynn Corp,Directed,SUPPLIES,2.18,0.99,COGS
+Advanced Micro Devices Inc,Wiwynn Corp,Directed,SUPPLIES,1.46,1.25,COGS
+Intel Corp,Wiwynn Corp,Directed,SUPPLIES,0.38,0.22,COGS
+Microsoft Corp,Wiwynn Corp,Directed,SUPPLIES,0.28,0.02,COGS
+Astera Labs Inc,Wiwynn Corp,Directed,SUPPLIES,0.09,3.17,COGS
+AcBel Polytech Inc,Wiwynn Corp,Directed,SUPPLIES,,,
+Tripod Technology Corp,Wiwynn Corp,Directed,SUPPLIES,,,
+Nan Juen International Co Ltd,Wiwynn Corp,Directed,SUPPLIES,,,
+FineTek Co Ltd,Wiwynn Corp,Directed,SUPPLIES,,,
+Shenzhen FRD Science & Technology,Wiwynn Corp,Directed,SUPPLIES,,,
+Wiwynn Corp,SMS InfoComm Technology Services & Management,Directed,SUPPLIES,,0.25,
+Wiwynn Corp,ICT Service Management Solutions India,Directed,SUPPLIES,,,
+Wiwynn Corp,HAWE Telekom Sp zoo,Directed,SUPPLIES,,,
+Digital Realty Trust Inc,Oracle Corp,Directed,SUPPLIES,4.13,0.65,SGA
+Advanced Micro Devices Inc,Oracle Corp,Directed,SUPPLIES,3.24,3.58,CAPEX
+International Business Machine,Oracle Corp,Directed,SUPPLIES,2.24,0.65,COGS
+Oracle Financial Services Software,Oracle Corp,Directed,SUPPLIES,1.92,40.34,COGS
+Arista Networks Inc,Oracle Corp,Directed,SUPPLIES,1.51,0.65,CAPEX
+Broadcom Inc,Oracle Corp,Directed,SUPPLIES,1.36,0.91,CAPEX
+Western Digital Corp,Oracle Corp,Directed,SUPPLIES,0.9,3.6,CAPEX
+Ciena Corp,Oracle Corp,Directed,SUPPLIES,0.37,2.02,CAPEX
+Credo Technology Group Holding,Oracle Corp,Directed,SUPPLIES,0.29,11.0,CAPEX
+Infosys Ltd,Oracle Corp,Directed,SUPPLIES,0.28,0.15,SGA
+Bloom Energy Corp,Oracle Corp,Directed,SUPPLIES,0.18,2.98,CAPEX
+Applied Optoelectronics Inc,Oracle Corp,Directed,SUPPLIES,0.11,6.37,CAPEX
+NetApp Inc,Oracle Corp,Directed,SUPPLIES,0.1,0.28,COGS
+Digital Core REIT Management P,Oracle Corp,Directed,SUPPLIES,0.06,5.66,SGA
+Intel Corp,Oracle Corp,Directed,SUPPLIES,0.03,0.01,COGS
+Bel Fuse Inc,Oracle Corp,Directed,SUPPLIES,,,
+Sri Lanka Telecom PLC,Oracle Corp,Directed,SUPPLIES,,,
+DTE Energy Co,Oracle Corp,Directed,SUPPLIES,,,
+King Slide Works Co Ltd,Oracle Corp,Directed,SUPPLIES,,,
+Commvault Systems Inc,Oracle Corp,Directed,SUPPLIES,,,
+Solteq Oyj,Oracle Corp,Directed,SUPPLIES,,,
+ON24 Inc,Oracle Corp,Directed,SUPPLIES,,,
+Oracle Corp,Accenture PLC,Directed,SUPPLIES,2.77,1.91,COGS
+Oracle Corp,Amazon.com Inc,Directed,SUPPLIES,0.28,1.34,COGS
+Oracle Corp,TD SYNNEX Corp,Directed,SUPPLIES,1.02,1.03,COGS
+Oracle Corp,CVS Health Corp,Directed,SUPPLIES,0.14,0.7,COGS
+Oracle Corp,UnitedHealth Group Inc,Directed,SUPPLIES,0.12,0.66,COGS
+Oracle Corp,Walmart Inc,Directed,SUPPLIES,0.08,0.65,COGS
+Oracle Corp,Oracle Corp Japan,Directed,SUPPLIES,35.4,0.58,COGS
+Oracle Corp,Valero Energy Corp,Directed,SUPPLIES,0.26,0.46,COGS
+Oracle Corp,PetroChina Co Ltd,Directed,SUPPLIES,0.08,0.44,COGS
+Oracle Corp,Tata Consultancy Services Ltd,Directed,SUPPLIES,1.48,0.42,COGS
+Oracle Corp,Humana Inc,Directed,SUPPLIES,0.23,0.38,COGS
+Oracle Corp,Microsoft Corp,Directed,SUPPLIES,0.28,0.38,COGS
+Oracle Corp,Tesco PLC,Directed,SUPPLIES,0.28,0.36,COGS
+Oracle Corp,JPMorgan Chase & Co,Directed,SUPPLIES,0.24,0.36,COGS
+Oracle Corp,Deutsche Post AG,Directed,SUPPLIES,0.25,0.34,COGS
+Oracle Corp,Toyota Motor Corp,Directed,SUPPLIES,0.08,0.34,COGS
+Oracle Corp,Arrow Electronics Inc,Directed,SUPPLIES,0.73,0.31,COGS
+Oracle Corp,Mitsui & Co Ltd,Directed,SUPPLIES,0.23,0.31,COGS
+Oracle Corp,United Parcel Service Inc,Directed,SUPPLIES,0.26,0.28,COGS
+Oracle Corp,Bank of America Corp,Directed,SUPPLIES,0.24,0.27,COGS
+Oracle Corp,CDW Corp/DE,Directed,SUPPLIES,1.05,0.27,COGS
+Oracle Corp,Bharti Airtel Ltd,Directed,SUPPLIES,1.07,0.26,COGS
+Oracle Corp,Orange SA,Directed,SUPPLIES,0.41,0.25,COGS
