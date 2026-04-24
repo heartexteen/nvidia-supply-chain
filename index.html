@@ -768,14 +768,17 @@ function applyIndustryFilter(industry) {
   currentIndustryFilter = industry;
   const show = (industry === "__all__")
     ? (() => true)
-    : (id => (industryOf[id] || "") === industry);
+    // Focal (NVIDIA) is always visible regardless of industry filter
+    : (id => id === FOCAL_ID || (industryOf[id] || "") === industry);
   const nodeIds = nodes.getIds();
   const visible = new Set(nodeIds.filter(show));
   const nodeUpdates = nodeIds.map(id => ({ id, hidden: !visible.has(id) }));
   nodes.update(nodeUpdates);
-  const edgeUpdates = edges.get().map(e => ({
-    id: e.id, hidden: !(visible.has(e.from) && visible.has(e.to))
-  }));
+  const edgeUpdates = edges.get().map(e => {
+    const bothEndsVisible = visible.has(e.from) && visible.has(e.to);
+    // Keep bidi-reverse edges hidden even when both endpoints are visible
+    return { id: e.id, hidden: !bothEndsVisible || bidiHiddenEdgeIds.has(e.id) };
+  });
   edges.update(edgeUpdates);
 }
 
