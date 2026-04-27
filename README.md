@@ -7,12 +7,10 @@ A network analysis of NVIDIA's Data Center segment, mapping suppliers, customers
 ```
 .
 ├── README.md                                          # this file
-├── Supply_Chain_Analytics_project_proposal.docx       # project proposal & sources
 ├── nodes.csv                                          # 607 entities (suppliers, NVIDIA, customers)
 ├── edges.csv                                          # 898 directed relationships with cost/revenue metrics
 ├── index.html                                         # interactive network visualization (pyvis / vis-network)
 ├── _server.js                                         # tiny static file server for local viewing
-└── IMG_*.jpg / IMG_*.jpeg                             # Bloomberg SPLC terminal screenshots (raw source data)
 ```
 
 ## Data model
@@ -77,7 +75,3 @@ If you want to add new entities, the workflow is:
 4. Add any new counterparty companies as `is_core=false` rows in `nodes.csv`
 
 The Bloomberg screenshots are the raw source for everything currently in the CSVs and can be cross-referenced when verifying numbers.
-
-## Sources
-
-The project proposal document (`Supply_Chain_Analytics_project_proposal.docx`) contains the full source list — NVIDIA SEC filings, TrendForce, IntuitionLabs, Bloomberg methodology guides, and the Culot et al. paper on academic use of supply chain databases.
